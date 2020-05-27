@@ -1,0 +1,31 @@
+@import "reset.scss";
+
+#app {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+body {
+   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+}
+
+.main {
+   flex: 1 1 auto;
+   background-repeat: no-repeat;
+   background-position: 0px 500px;
+   background-size: 400px;
+}
+
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+}
+
+
+.common-title {
+   color: #1c537a;
+   font-weight: 700;
+   text-shadow: 2px 2px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
