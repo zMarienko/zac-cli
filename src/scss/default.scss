@@ -1,0 +1,168 @@
+.default {
+   &__inner {
+      margin: 10px 15px;
+      padding: 10px 15px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+      &--sidebar {
+         display: flex;
+         justify-content: space-between;
+         box-shadow: none;
+         margin: 0px;
+      }
+   }
+
+   &__content--sidebar {
+      width: 74%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      padding: 10px 15px;
+   }
+
+   &__sidebar {
+      width: 24%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+   }
+
+   &__title {
+      text-align: center;
+      line-height: 1.2;
+      font-size: 34px;
+      padding: 20px 15px;
+   }
+
+   &__text {
+      border-left: 10px solid #3190d3;
+      font-size: 16px;
+      text-align: justify;
+      padding: 10px 15px;
+      margin: 10px 10px;
+   }
+
+   &__quote {
+      display: block;
+      background: #f8f9f9 url(/img/lines.gif) repeat;
+      border-left: 10px solid #3190d3;
+      padding: 10px 15px;
+      margin: 10px 10px;
+   }
+
+   &__link {
+      display: block;
+      padding: 7px 0px;
+   }
+
+   &__images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0px 20px 20px 20px;
+
+      &--update {
+         justify-content: space-around;
+         padding: 10px 0px;
+      }
+
+      .default__img {
+         flex: 1 1 auto;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+         margin: 10px;
+         height: 200px;
+         object-fit: cover;
+
+         &--column {
+            flex: none;
+            margin: 0px;
+            width: 90%;
+            height: auto;
+         }
+
+         &--two-images {
+            flex: none;
+            margin: 0px;
+            width: 49%;
+            height: auto;
+         }
+
+         &--three-images {
+            flex: none;
+            margin: 0px;
+            width: 32%;
+            height: auto;
+            object-fit: contain;
+         }
+      }
+   }
+
+   &__item {
+      text-align: center;
+      width: 50%;
+      margin: 15px;
+      padding: 5px;
+      display: flex;
+      background-color: rgba(#ffffff, 0.5);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+      &--large {
+         text-align: left;
+         width: auto;
+         margin: 10px 15px;
+         padding: 0px;
+      }
+
+      &--psiholog {
+
+         margin: 0px;
+         padding: 0px;
+         height: 200px;
+         width: 100%;
+         box-shadow: none;
+      }
+
+      &-name {
+         padding: 20px 10px;
+      }
+
+      &-title {
+         font-size: 26px;
+         padding: 0px 10px;
+      }
+
+      &-subtitle {
+         font-size: 20px;
+         padding: 10px 10px;
+         color: #464646;
+      }
+
+      &-link {
+         font-size: 14px;
+         margin: 0px 10px;
+         color: #115ba0;
+         border-bottom: 0.1em solid #115ba0;
+      }
+
+      &-text {
+         font-size: 14px;
+         padding: 10px 10px;
+         color: #464646;
+      }
+
+      &-teaches {
+         font-size: 14px;
+         padding: 0px 10px;
+         color: #464646;
+      }
+
+      &-img {
+         width: 30%;
+         object-fit: cover;
+
+         &--large {
+            width: 20%;
+         }
+      }
+   }
+}

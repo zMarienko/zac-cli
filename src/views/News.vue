@@ -1,123 +1,121 @@
 <template>
-  <main class="main" style="background-image: url(/img/study.png);">
-    <section class="news">
-      <div class="container">
-        <div class="news__inner">
-          <div class="news__content-inner">
-            <div v-if="posts.length" class="news__list">
-              <article
-                v-for="post of displayPosts2"
-                :key="post.id"
-                class="news__article"
-              >
-                <img :src="post.image" class="news__img" />
-                <div class="news__content">
-                  <router-link :to="'/news/' + post.id">
-                    <h3 class="news__title common-title">{{ post.title }}</h3>
-                  </router-link>
-                  <div class="news__description">
-                    {{ post.description }}
-                  </div>
-                  <span class="news__date">{{ post.date }}</span>
-                </div>
-              </article>
-            </div>
-            <div v-else class="news__content-inner">
-              <div class="news__title common-title">Постов нету</div>
-            </div>
-          </div>
-          <aside class="sidebar">
-            <button
-              class="sidebar__title common-title"
-              v-on:click="(month = null), (year = null)"
+  <section class="news">
+    <div class="container">
+      <div class="news__inner">
+        <div class="news__content-inner">
+          <div v-if="posts.length" class="news__list">
+            <article
+              v-for="post of displayPosts2"
+              :key="post.id"
+              class="news__article"
             >
-              Архiв
-            </button>
-            <nav class="sidebar__archive">
-              <ul class="sidebar__block">
-                <li class="sidebar__year">2020</li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 5), (year = 2020)"
-                  >
-                    Травень
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 4), (year = 2020)"
-                  >
-                    Квiтень
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 3), (year = 2020)"
-                  >
-                    Березень
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 2), (year = 2020)"
-                  >
-                    Лютий
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 1), (year = 2020)"
-                  >
-                    Сiчень
-                  </button>
-                </li>
-              </ul>
-              <ul class="sidebar__block">
-                <li class="sidebar__year">2019</li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 12), (year = 2019)"
-                  >
-                    Грудень
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 11), (year = 2019)"
-                  >
-                    Листопад
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 10), (year = 2019)"
-                  >
-                    Жовтень
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="sidebar__item"
-                    v-on:click="(month = 9), (year = 2019)"
-                  >
-                    Листопад
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </aside>
+              <img :src="post.image" class="news__img" />
+              <div class="news__content">
+                <router-link :to="'/news/' + post.id">
+                  <h3 class="news__title main-title">{{ post.title }}</h3>
+                </router-link>
+                <div class="news__description">
+                  {{ post.description }}
+                </div>
+                <span class="news__date">{{ post.date }}</span>
+              </div>
+            </article>
+          </div>
+          <div v-else class="news__content-inner">
+            <div class="news__title main-title">Постов нету</div>
+          </div>
         </div>
+        <aside class="sidebar">
+          <button
+            class="sidebar__title main-title"
+            v-on:click="(month = null), (year = null)"
+          >
+            Архiв
+          </button>
+          <nav class="sidebar__archive">
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2020</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 5), (year = 2020)"
+                >
+                  Травень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 4), (year = 2020)"
+                >
+                  Квiтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 3), (year = 2020)"
+                >
+                  Березень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 2), (year = 2020)"
+                >
+                  Лютий
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 1), (year = 2020)"
+                >
+                  Сiчень
+                </button>
+              </li>
+            </ul>
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2019</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 12), (year = 2019)"
+                >
+                  Грудень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 11), (year = 2019)"
+                >
+                  Листопад
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 10), (year = 2019)"
+                >
+                  Жовтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 9), (year = 2019)"
+                >
+                  Листопад
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 </template>
 
 <script>

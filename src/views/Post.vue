@@ -4,7 +4,7 @@
       <section class="post">
         <div class="post__inner">
           <div class="post__content">
-            <div class="post__title common-title">
+            <div class="post__title main-title">
               {{ post.title }}
             </div>
             <div class="post__text">

@@ -1,25 +1,30 @@
 <template>
-  <main class="main">
+  <section class="error-404">
     <div class="container">
-      <section class="error-404">
+      <div class="error-404__inner">
         <div class="error-404__img" />
-        <div class="error-404__inner">
+        <div class="error-404__content-inner">
           <h2 class="error-404__title">Помилка 404</h2>
           <h3 class="error-404__subtitle">Сторiнка не найдена</h3>
-          <p
-            class="error-404__text"
-          >Вибачте, але сторінка яку ви шукаєте не існує, або була видалена, або її ім'я змінено, або вона тимчасово недоступна</p>
-          <router-link to="/" class="error-404__link">Повернутися на головну</router-link>
+          <p class="error-404__text">
+            Вибачте, але сторінка яку ви шукаєте не існує, або була видалена,
+            або її ім'я змінено, або вона тимчасово недоступна
+          </p>
+          <router-link to="/" class="error-404__link"
+            >Повернутися на головну</router-link
+          >
         </div>
-      </section>
+      </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .error-404 {
-  margin-top: 6em;
   &__inner {
+    margin-top: 6em;
+  }
+  &__content-inner {
     padding: 0px 15px;
     position: relative;
     display: flex;
@@ -54,11 +59,11 @@
     top: 35%;
     width: 180px;
     height: 180px;
-    background-image: url("/img/404.png");
+    background-image: url('/img/404.png');
     background-size: cover;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 100%;

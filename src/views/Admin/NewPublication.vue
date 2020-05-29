@@ -1,64 +1,62 @@
 <template>
-  <main class="main">
+  <section class="new-publication">
     <div class="container">
-      <section class="new-publication">
-        <div class="new-publication__inner">
-          <div class="new-publication__title common-title">Нова публiкацiя</div>
-          <form class="form" @submit.prevent="submitPost">
-            <div class="form__row">
-              <div class="form__column-left">
-                <label class="form__label">Головна картинка</label>
-                <label class="form__label">Назва публiкацї</label>
-                <label class="form__label">Короткий опис</label>
-                <label class="form__label">Текст</label>
-              </div>
-              <div class="form__column-right">
-                <input
-                  id="file"
-                  ref="file"
-                  type="file"
-                  class="form__file"
-                  accept="image/*"
-                  @change="onFileChange"
-                  required
-                />
-                <input
-                  class="form__title"
-                  v-model="title"
-                  placeholder="Введiть назву.."
-                  maxlength="200"
-                  required
-                />
-                <input
-                  class="form__description"
-                  v-model="description"
-                  placeholder="Введiть короткий опис публiкацї.."
-                  required
-                />
-                <textarea
-                  class="form__text"
-                  v-model="text"
-                  placeholder="Напишiть щось.."
-                  rows="12"
-                  required
-                ></textarea>
-
-                <button class="form__btn" type="submit">
-                  Опублікувати
-                </button>
-                <input
-                  type="date"
-                  :value="date.toISOString().split('T')[0]"
-                  class="form__date"
-                  id="form__date"
-                />
-              </div>
+      <div class="new-publication__inner">
+        <div class="new-publication__title main-title">Нова публiкацiя</div>
+        <form class="form" @submit.prevent="submitPost">
+          <div class="form__row">
+            <div class="form__column-left">
+              <label class="form__label">Головна картинка</label>
+              <label class="form__label">Назва публiкацї</label>
+              <label class="form__label">Короткий опис</label>
+              <label class="form__label">Текст</label>
             </div>
-          </form>
-        </div>
-      </section>
+            <div class="form__column-right">
+              <input
+                id="file"
+                ref="file"
+                type="file"
+                class="form__file"
+                accept="image/*"
+                @change="onFileChange"
+                required
+              />
+              <input
+                class="form__title"
+                v-model="title"
+                placeholder="Введiть назву.."
+                maxlength="200"
+                required
+              />
+              <input
+                class="form__description"
+                v-model="description"
+                placeholder="Введiть короткий опис публiкацї.."
+                required
+              />
+              <textarea
+                class="form__text"
+                v-model="text"
+                placeholder="Напишiть щось.."
+                rows="12"
+                required
+              ></textarea>
+
+              <button class="form__btn" type="submit">
+                Опублікувати
+              </button>
+              <input
+                type="date"
+                :value="date.toISOString().split('T')[0]"
+                class="form__date"
+                id="form__date"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <script>

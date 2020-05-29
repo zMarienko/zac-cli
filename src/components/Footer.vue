@@ -5,13 +5,28 @@
         <div class="footer__social-inner">
           <span class="footer__social-title">ЗАК у соціальних мережах:</span>
           <a class="footer__social-link" href="https://t.me/zaczp">
-            <img class="footer__social-telegram" src="/img/social-media/telegram.svg" alt />
+            <img
+              class="footer__social-telegram"
+              src="/img/social-media/telegram.svg"
+              alt="social-telegram"
+            />
           </a>
-          <a class="footer__social-link" href="https://www.instagram.com/zac.zp/">
-            <img class="footer__social-instagram" src="/img/social-media/instagram.svg" alt />
+          <a
+            class="footer__social-link"
+            href="https://www.instagram.com/zac.zp/"
+          >
+            <img
+              class="footer__social-instagram"
+              src="/img/social-media/instagram.svg"
+              alt="social-instagram"
+            />
           </a>
           <a class="footer__social-link" href="https://twitter.com/zac_org_ua">
-            <img class="footer__social-twitter" src="/img/social-media/twitter.svg" alt />
+            <img
+              class="footer__social-twitter"
+              src="/img/social-media/twitter.svg"
+              alt="social-twitter"
+            />
           </a>
         </div>
       </div>
@@ -20,8 +35,14 @@
       <div class="container">
         <nav class="footer__list">
           <div class="footer__copyright">
-            <img class="footer__copyright-logo" src="/img/mini-logo.png" alt />
-            <h6 class="footer__copyright">© 2020 Запорiзький Авiацiйний Коледж iм. О.Г. Iвченка</h6>
+            <img
+              class="footer__copyright-logo"
+              src="/img/mini-logo.png"
+              alt="mini-logo"
+            />
+            <h6 class="footer__copyright">
+              © 2020 Запорiзький Авiацiйний Коледж iм. О.Г. Iвченка
+            </h6>
           </div>
           <ul class="footer__column">
             <li class="footer__title">Департамент освіти і науки</li>
@@ -37,19 +58,29 @@
           <ul class="footer__column">
             <li class="footer__title">Телефони для довідок</li>
             <li class="footer__item">
-              <span class="footer__item-span">Приймальня директора: &nbsp;</span>
-              <a class="footer__item-link" href="tel:+380617205526">(061)720-55-26</a>
+              <span class="footer__item-span"
+                >Приймальня директора: &nbsp;</span
+              >
+              <a class="footer__item-link" href="tel:+380617205526"
+                >(061)720-55-26</a
+              >
             </li>
             <li class="footer__item">
               <span class="footer__item-span">Приймальна комісія:</span>
-              <a class="footer__item-link" href="tel:+380612122152">(061)212-21-52</a>
+              <a class="footer__item-link" href="tel:+380612122152"
+                >(061)212-21-52</a
+              >
             </li>
           </ul>
           <ul class="footer__column">
             <li class="footer__title">Електронні поштові скриньки</li>
             <li class="footer__item">
-              <span class="footer__item-span">Приймальня директора: &nbsp;</span>
-              <a class="footer__item-link" href="mailto:zac.office@meta.ua">zac.office@meta.ua</a>
+              <span class="footer__item-span"
+                >Приймальня директора: &nbsp;</span
+              >
+              <a class="footer__item-link" href="mailto:zac.office@meta.ua"
+                >zac.office@meta.ua</a
+              >
             </li>
           </ul>
         </nav>
@@ -147,4 +178,3 @@
   }
 }
 </style>
-

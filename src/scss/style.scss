@@ -8,7 +8,6 @@
 
 body {
    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-
 }
 
 .main {
@@ -23,9 +22,30 @@ body {
    margin: 0 auto;
 }
 
-
-.common-title {
+.main-title {
    color: #1c537a;
    font-weight: 700;
    text-shadow: 2px 2px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
+.polaroid {
+   margin: 10px 0px;
+   padding: 5px;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba(190, 190, 190, 0.5);
+
+   &__img {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   &__text {
+      padding: 5px 5px;
+      text-align: center;
+   }
+}
+
+@import "default.scss";

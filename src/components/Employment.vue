@@ -1,7 +1,7 @@
 <template>
   <section class="employment">
     <div class="container">
-      <div class="employment__inner common-title">
+      <div class="employment__inner main-title">
         <div class="employment__title">Працевлаштування студентiв</div>
         <router-link
           tag="button"
@@ -57,4 +57,3 @@
   }
 }
 </style>
-

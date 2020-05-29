@@ -2,25 +2,41 @@
   <section class="steps">
     <div class="container">
       <div class="steps__inner">
-        <div class="steps__title common-title">
+        <div class="steps__title main-title">
           <h2>Як поступити до коледжу?</h2>
         </div>
         <div class="steps__menu">
-          <button class="steps__button common-title steps__button--active">На бюджет</button>
-          <button class="steps__button common-title">На контракт</button>
+          <button class="steps__button main-title steps__button--active">
+            На бюджет
+          </button>
+          <button class="steps__button main-title">На контракт</button>
         </div>
         <div class="steps__box">
           <div class="steps__box-item steps__box-item--blue">
-            <img class="steps__box-img" src="/img/steps/step-1.svg" alt="Шаг 1. Подать заявку" />
+            <img
+              class="steps__box-img"
+              src="/img/steps/step-1.svg"
+              alt="Шаг 1. Подать заявку"
+            />
             <div class="steps__box-text">
               <p>Подайте заявку до вступу.</p>
-              <p>Вступ по програмi бюджету здійснюється на підставі свiдотства про здобуття базової середньої освіти</p>
+              <p>
+                Вступ по програмi бюджету здійснюється на підставі свiдотства
+                про здобуття базової середньої освіти
+              </p>
             </div>
           </div>
           <div class="steps__box-item steps__box-item--green">
-            <img class="steps__box-img" src="/img/steps/step-2.svg" alt="Шаг 2. Подать документы" />
+            <img
+              class="steps__box-img"
+              src="/img/steps/step-2.svg"
+              alt="Шаг 2. Подать документы"
+            />
             <div class="steps__box-text">
-              <p>Надайте до приймальної комісії документи про поточний рівень освіти</p>
+              <p>
+                Надайте до приймальної комісії документи про поточний рівень
+                освіти
+              </p>
             </div>
           </div>
           <div class="steps__box-item steps__box-item--purple">
@@ -118,28 +134,28 @@
       &--blue {
         background-color: rgba(27, 109, 233, 0.65);
         &:before {
-          content: "1";
+          content: '1';
         }
       }
 
       &--green {
         background-color: rgba(25, 173, 120, 0.65);
         &:before {
-          content: "2";
+          content: '2';
         }
       }
 
       &--purple {
         background-color: rgba(121, 19, 235, 0.65);
         &:before {
-          content: "3";
+          content: '3';
         }
       }
 
       &--red {
         background-color: rgba(247, 60, 79, 0.65);
         &:before {
-          content: "4";
+          content: '4';
         }
       }
 
@@ -160,4 +176,3 @@
   }
 }
 </style>
-

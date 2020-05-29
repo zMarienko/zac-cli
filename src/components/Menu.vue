@@ -82,12 +82,13 @@
             class="menu__item-submenu"
             >Пiдготовчi курси</router-link
           >
-          <router-link
-            tag="li"
-            to="/abituriyentu/pravyla-pryyomu"
-            class="menu__item-submenu"
-            >Правила прийому</router-link
-          >
+          <li class="menu__item-submenu">
+            <a
+              target="_blank"
+              href="http://zac.org.ua/uploads/priom/pravila2020.pdf"
+              >Правила прийому</a
+            >
+          </li>
           <router-link
             tag="li"
             to="/abituriyentu/vstupna-kompaniya"
@@ -118,12 +119,11 @@
             class="menu__item-submenu"
             >Вартiсть навчання</router-link
           >
-          <router-link
-            tag="li"
-            to="/abituriyentu/reytynhovi-spysky"
-            class="menu__item-submenu"
-            >Рейтинговi списки</router-link
-          >
+          <li class="menu__item-submenu">
+            <a target="_blank" href="http://vstup.info/2019/i2019i518.html"
+              >Рейтинговi списки</a
+            >
+          </li>
           <router-link
             tag="li"
             to="/abituriyentu/stypendialne-zabezpechennya"
@@ -205,12 +205,14 @@
             class="menu__item-submenu"
             >Зразки документів</router-link
           >
-          <router-link
-            tag="li"
-            to="/metodychnyy-kabinet/ministerski-prohramy"
-            class="menu__item-submenu"
-            >Міністерські програми</router-link
-          >
+
+          <li class="menu__item-submenu">
+            <a
+              target="_blank"
+              href="https://drive.google.com/drive/folders/1Uooymoxg_2fyQL9aNjKHmsSKEjX7f1dS"
+              >Міністерські програми</a
+            >
+          </li>
           <router-link
             tag="li"
             to="/metodychnyy-kabinet/normatyvni-akty"
@@ -220,140 +222,140 @@
         </ul>
       </li>
       <li class="menu__item">
-        <router-link tag="button" to="/navchalna-robota" class="menu__link"
+        <router-link tag="button" to="/educational-work" class="menu__link"
           >Навчальна робота</router-link
         >
         <ul class="menu__submenu menu__submenu--ptsk">
           <router-link
             tag="li"
-            to="/navchalna-robota/navchalni-plany-ta-normatyvni-dokumenty"
+            to="/educational-work/navchalni-plany-ta-normatyvni-dokumenty"
             class="menu__item-submenu"
             >Навчальні плани та нормативні документи</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/tsyklovi-komisiyi"
+            to="/educational-work/tsyklovi-komisiyi"
             class="menu__item-submenu"
             >Циклові комісії</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-suspilno-politychnykh-dystsyplin"
+            to="/educational-work/ptsk-suspilno-politychnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК суспільно-політичних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-filolohichnykh-dystsyplin"
+            to="/educational-work/ptsk-filolohichnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК філологічних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-fizyko-matematychnykh-dystsyplin"
+            to="/educational-work/ptsk-fizyko-matematychnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК фізико-математичних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-fizkulturnykh-dystsyplin"
+            to="/educational-work/ptsk-fizkulturnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК фізкультурних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-metalurhiynykh-dystsyplin"
+            to="/educational-work/ptsk-metalurhiynykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК металургійних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-aviakonstruktorskykh-dystsyplin"
+            to="/educational-work/ptsk-aviakonstruktorskykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК авіаконструкторських дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-spetstekhnolohichnykh-dystsyplin"
+            to="/educational-work/ptsk-spetstekhnolohichnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК спецтехнологічних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-ekonomichnykh-dystsyplin"
+            to="/educational-work/ptsk-ekonomichnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК економічних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-kompyuternykh-dystsyplin"
+            to="/educational-work/ptsk-kompyuternykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК комп'ютерних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/ptsk-elektrotekhnichnykh-dystsyplin"
+            to="/educational-work/ptsk-elektrotekhnichnykh-dystsyplin"
             class="menu__item-submenu"
             >ПЦК електротехнічних дисциплін</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/denne-viddilennya"
+            to="/educational-work/denne-viddilennya"
             class="menu__item-submenu"
             >Денне відділення</router-link
           >
           <router-link
             tag="li"
-            to="/navchalna-robota/zaochne-viddilennya"
+            to="/educational-work/zaochne-viddilennya"
             class="menu__item-submenu"
             >Заочне відділення</router-link
           >
         </ul>
       </li>
       <li class="menu__item">
-        <router-link tag="button" to="/pro-koledzh" class="menu__link"
+        <router-link tag="button" to="/about" class="menu__link"
           >Про коледж</router-link
         >
         <ul class="menu__submenu menu__submenu--about">
           <router-link
             tag="li"
-            to="/pro-koledzh/istoriya-koledzhu"
+            to="/about/istoriya-koledzhu"
             class="menu__item-submenu"
             >Iсторiя коледжу</router-link
           >
           <router-link
             tag="li"
-            to="/pro-koledzh/hurtozhytok"
+            to="/about/hurtozhytok"
             class="menu__item-submenu"
             >Гуртожиток</router-link
           >
           <router-link
             tag="li"
-            to="/pro-koledzh/baza-vidpochynku"
+            to="/about/baza-vidpochynku"
             class="menu__item-submenu"
             >База вiдпочинку</router-link
           >
           <router-link
             tag="li"
-            to="/pro-koledzh/psykholohichna-sluzhba"
+            to="/about/psykholohichna-sluzhba"
             class="menu__item-submenu"
             >Психологiчна служба</router-link
           >
           <router-link
             tag="li"
-            to="/pro-koledzh/sportyvne-zhyttya"
+            to="/about/sportyvne-zhyttya"
             class="menu__item-submenu"
             >Спортивне життя</router-link
           >
           <router-link
             tag="li"
-            to="/pro-koledzh/kerivnytstvo"
+            to="/about/kerivnytstvo"
             class="menu__item-submenu"
             >Керiвництво</router-link
           >
           <router-link
             tag="li"
-            to="/pro-koledzh/normatyvni-dokumenty"
+            to="/about/normatyvni-dokumenty"
             class="menu__item-submenu"
             >Нормативнi документи</router-link
           >
