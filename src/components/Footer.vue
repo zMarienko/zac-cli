@@ -58,9 +58,7 @@
           <ul class="footer__column">
             <li class="footer__title">Телефони для довідок</li>
             <li class="footer__item">
-              <span class="footer__item-span"
-                >Приймальня директора: &nbsp;</span
-              >
+              <span class="footer__item-span">Приймальня директора: &zwj;</span>
               <a class="footer__item-link" href="tel:+380617205526"
                 >(061)720-55-26</a
               >
@@ -75,9 +73,7 @@
           <ul class="footer__column">
             <li class="footer__title">Електронні поштові скриньки</li>
             <li class="footer__item">
-              <span class="footer__item-span"
-                >Приймальня директора: &nbsp;</span
-              >
+              <span class="footer__item-span">Приймальня директора: &zwj;</span>
               <a class="footer__item-link" href="mailto:zac.office@meta.ua"
                 >zac.office@meta.ua</a
               >

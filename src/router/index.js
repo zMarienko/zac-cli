@@ -30,6 +30,41 @@ const routes = [{
   component: () => import('@/views/Admin/NewPublication.vue')
 },
 {
+  path: '/specialty/aviatsiyna-ta-raketno-kosmichna-tekhnika',
+  name: 'aviatsiyna-ta-raketno-kosmichna-tekhnika',
+  component: () => import('@/views/Spetsialnosti/AviatsiynaTaRaketnoKosmichnaTekhnika.vue')
+},
+{
+  path: '/specialty/haluzeve-mashynobuduvannya',
+  name: 'haluzeve-mashynobuduvannya',
+  component: () => import('@/views/Spetsialnosti/HaluzeveMashynobuduvannya.vue')
+},
+{
+  path: '/specialty/metalurhiya',
+  name: 'metalurhiya',
+  component: () => import('@/views/Spetsialnosti/Metalurhiya.vue')
+},
+{
+  path: '/specialty/prykladna-mekhanika',
+  name: 'prykladna-mekhanika',
+  component: () => import('@/views/Spetsialnosti/PrykladnaMekhanika.vue')
+},
+{
+  path: '/specialty/kompyuterni-nauky-ta-informatsiyni-tekhnolohiyi',
+  name: 'kompyuterni-nauky-ta-informatsiyni-tekhnolohiyi',
+  component: () => import('@/views/Spetsialnosti/KompyuterniNaukyTaInformatsiyniTekhnolohiyi.vue')
+},
+{
+  path: '/specialty/kompyuterna-inzheneriya',
+  name: 'kompyuterna-inzheneriya',
+  component: () => import('@/views/Spetsialnosti/KompyuternaInzheneriya.vue')
+},
+{
+  path: '/specialty/ekonomika',
+  name: 'ekonomika',
+  component: () => import('@/views/Spetsialnosti/Ekonomika.vue')
+},
+{
   path: '/abituriyentu/pidhotovchi-kursy',
   name: 'pidhotovchi-kursy',
   component: () => import('@/views/Abituriyentu/PidhotovchiKursy.vue')
@@ -220,16 +255,18 @@ const routes = [{
   component: () => import('@/views/ProKoledzh/NormatyvniDokumenty.vue')
 },
 
-  //{
-  //  path: '*',
-  //  redirect: '/error-404',
-  //},
+{
+  path: '*',
+  redirect: '/error-404',
+},
 ];
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: "/zac-cli/",
   routes,
 });
 
 export default router;
+
+//process.env.BASE_URL

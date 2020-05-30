@@ -13,8 +13,16 @@ body {
 .main {
    flex: 1 1 auto;
    background-repeat: no-repeat;
-   background-position: 0px 500px;
+   background-position: 0px 230px;
    background-size: 400px;
+
+   .error-404:before {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 40%;
+      background-color: #ffff;
+   }
 }
 
 .container {
