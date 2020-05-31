@@ -7,7 +7,7 @@
             <img class="header__logo" src="/img/ukraine.svg" alt="zac.zp.ua" />
           </router-link>
           <div class="header__name">
-            <router-link to="/admin/news/new" tag="a">
+            <router-link to="/admin/news/new">
               <h1 class="header__title">
                 Запорiзький авiацiйний коледж iм. О.Г. Iвченка
               </h1>
@@ -105,56 +105,143 @@ export default {
   }
 }
 
-.land {
-  &__selected {
-    border: 1px solid #fff;
-    background: #fff;
+@media (max-width: 900px) {
+  .header__subtitle {
+    max-width: 312px;
   }
 
-  &__ua,
-  &__ru {
-    font-size: 12px;
-    border: 1px solid #e7ecef;
-    min-height: 20px;
-    min-width: 40px;
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-
-    &-link {
-      color: #1c537a;
-    }
-
-    &:hover {
-      border: 1px solid #fff;
-      background: #fff;
-    }
+  .header__land {
+    top: 0px;
+    right: 110px;
   }
 }
 
-.mobile__btn {
-  align-self: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #fff;
-  position: relative;
-  color: #464646;
-  transition: all 0.5s;
+@media (max-width: 752px) {
+  .menu {
+    display: none;
+  }
+  .header__title {
+    font-size: 30px;
+    max-width: 340px;
+  }
+  .header__subtitle {
+    display: none;
+  }
+  .header__land {
+    top: auto;
+    right: auto;
+    left: 0px;
+    bottom: 10px;
+  }
+  .header__btn {
+    display: block;
+    margin: auto 15px;
+  }
+}
 
-  &::after {
-    content: '';
-    width: 17px;
-    height: 3px;
-    border-radius: 1px;
-    background-color: #464646;
-    position: absolute;
-    top: 13px;
-    left: 11px;
-    box-shadow: 0 6px 0 0 #464646, 0 12px 0 0;
+@media (max-width: 520px) {
+  .header__title {
+    font-size: 26px;
+    width: 290px;
   }
 
-  &:hover {
-    background: #888888;
+  .header__logo {
+    max-height: 90px;
+  }
+}
+
+@media (max-width: 485px) {
+  .header__top-inner {
+    justify-content: center;
+  }
+
+  .header__logo {
+    height: 70px;
+  }
+
+  .header__title {
+    font-size: 24px;
+  }
+
+  .header__name {
+    min-width: 270px;
+    max-width: 270px;
+    transform: translateY(-7px);
+  }
+
+  .header__land {
+    bottom: -2px;
+  }
+  .header__btn {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__title {
+    font-size: 20px;
+    min-width: 222px;
+    max-width: 222px;
+  }
+
+  .header__name {
+    min-width: 222px;
+    max-width: 222px;
+    transform: translateY(0px);
+  }
+
+  .header__land {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__title {
+    font-size: 18px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .header__name {
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .land__ua,
+  .land__ru {
+    font-size: 10px;
+    height: 15px;
+    width: 30px;
+  }
+
+  .header__land {
+    bottom: 7px;
+  }
+}
+
+@media (max-width: 342px) {
+  .header__logo {
+    height: 60px;
+    margin: 10px 10px;
+  }
+
+  .header__title {
+    font-size: 18px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .header__name {
+    min-width: 180px;
+    max-width: 180px;
+  }
+
+  .header__land {
+    bottom: 3px;
+  }
+
+  .header__btn {
+    margin-left: 25px;
   }
 }
 </style>

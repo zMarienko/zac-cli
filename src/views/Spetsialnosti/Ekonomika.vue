@@ -3,8 +3,7 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Комп'ютерні науки та інформаційні технології (Обслуговування
-          програмних систем і комплексів)
+          Економіка (Економіка підприємства)
         </div>
         <div class="default__quote">
           Професійне призначення – готується для роботи в

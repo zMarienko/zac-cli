@@ -3,7 +3,7 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Металургія. (Ливарне виробництво чорних та кольорових металів)
+          Металургія (Ливарне виробництво чорних та кольорових металів)
         </div>
         <div class="default__quote">
           Професійне призначення – готується для роботи в

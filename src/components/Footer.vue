@@ -173,4 +173,56 @@
     }
   }
 }
+
+@media (max-width: 957px) {
+  .footer {
+    .footer__column:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 866px) {
+  .footer__column {
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 796px) {
+  .footer__column:nth-child(4) {
+    display: none;
+  }
+  .footer__list {
+    padding: 5px 0px;
+  }
+}
+
+@media (max-width: 485px) {
+  .footer__column {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    &__list {
+      padding: 10px 0px;
+    }
+
+    &__social {
+      &-title {
+        font-size: 14px;
+      }
+
+      &-telegram,
+      &-twitter {
+        height: 25px;
+      }
+
+      &-instagram {
+        height: 27px;
+      }
+    }
+  }
+}
 </style>

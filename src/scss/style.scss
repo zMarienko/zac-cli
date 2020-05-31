@@ -56,4 +56,74 @@ body {
    }
 }
 
+
+.blue-button {
+   border-radius: 3px;
+   border: 1px solid darken(#fff, 20%);
+   background-image: linear-gradient(to right,
+         #336ec7 0%,
+         #ffffff 70%,
+         #336ec7 100%);
+   transition: 0.7s;
+   background-size: 500% auto;
+
+   &:hover {
+      background-position: right center;
+   }
+}
+
+.mobile__btn {
+   align-self: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 20px;
+   background-color: #fff;
+   position: relative;
+   color: #464646;
+   transition: all 0.5s;
+
+   &::after {
+      content: '';
+      width: 15px;
+      height: 3px;
+      border-radius: 1px;
+      background-color: #464646;
+      position: absolute;
+      top: 32%;
+      left: 30%;
+      box-shadow: 0 6px 0 0 #464646, 0 12px 0 0;
+   }
+
+   &:hover {
+      background: #888888;
+   }
+}
+
+
+.land {
+   &__selected {
+      border: 1px solid #fff;
+      background: #fff;
+   }
+
+   &__ua,
+   &__ru {
+      font-size: 12px;
+      border: 1px solid #e7ecef;
+      min-height: 20px;
+      min-width: 40px;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+
+      &-link {
+         color: #1c537a;
+      }
+
+      &:hover {
+         border: 1px solid #fff;
+         background: #fff;
+      }
+   }
+}
+
 @import "default.scss";

@@ -10,6 +10,14 @@
          box-shadow: none;
          margin: 0px;
       }
+
+      &--row {
+         display: flex;
+         justify-content: space-between;
+         box-shadow: none;
+         margin: 0px;
+         padding: 0px;
+      }
    }
 
    &__content--sidebar {
@@ -32,6 +40,10 @@
       line-height: 1.2;
       font-size: 34px;
       padding: 20px 15px;
+
+      &--row {
+         text-align: left;
+      }
    }
 
    &__text {
@@ -53,6 +65,14 @@
    &__link {
       display: block;
       padding: 7px 0px;
+   }
+
+   &__tel {
+      color: #16486b;
+      height: 100%;
+      white-space: nowrap;
+      line-height: 1.4;
+      border-bottom: 2px dotted #80b1d9;
    }
 
    &__images {
@@ -164,5 +184,71 @@
             width: 20%;
          }
       }
+   }
+
+   &__btn {
+      padding: 15px 50px;
+      margin-left: auto;
+      margin-right: 30px;
+      align-self: center;
+      font-size: 24px;
+      color: #fff;
+   }
+}
+
+@media (max-width: 1080px) {
+   .default__title {
+      font-size: 28px;
+
+      &--row {
+         font-size: 30px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   .default__title {
+      &--row {
+         font-size: 28px;
+      }
+   }
+}
+
+@media (max-width: 960px) {
+   .default__title {
+      font-size: 28px;
+
+      &--row {
+         font-size: 24px;
+      }
+   }
+
+   .default__btn {
+      font-size: 22px;
+      padding: 15px 30px;
+   }
+}
+
+@media (max-width: 888px) {
+   .default__title {
+      font-size: 28px;
+
+      &--row {
+         font-size: 22px;
+      }
+   }
+
+}
+
+@media (max-width: 770px) {
+   .default__title--row {
+      font-size: 20px;
+      padding: 10px 15px;
+   }
+
+   .default__btn {
+      font-size: 18px;
+      padding: 10px 15px;
+      margin-right: 20px;
    }
 }

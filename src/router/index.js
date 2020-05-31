@@ -30,6 +30,36 @@ const routes = [{
   component: () => import('@/views/Admin/NewPublication.vue')
 },
 {
+  path: '/specialty/',
+  name: 'specialty',
+  component: () => import('@/views/Spetsialnosti/Spetsialnosti.vue')
+},
+{
+  path: '/abituriyent/',
+  name: 'abituriyent',
+  component: () => import('@/views/Abituriyentu/Abituriyentu.vue')
+},
+{
+  path: '/student/',
+  name: 'student',
+  component: () => import('@/views/Studentu/Studentu.vue')
+},
+{
+  path: '/methodical-cabinet/',
+  name: 'methodical-cabinet',
+  component: () => import('@/views/MetodychnyyKabinet/MetodychnyyKabinet.vue')
+},
+{
+  path: '/educational-work/',
+  name: 'educational-work',
+  component: () => import('@/views/NavchalnaRobota/NavchalnaRobota.vue')
+},
+{
+  path: '/about/',
+  name: 'about',
+  component: () => import('@/views/ProKoledzh/ProKoledzh.vue')
+},
+{
   path: '/specialty/aviatsiyna-ta-raketno-kosmichna-tekhnika',
   name: 'aviatsiyna-ta-raketno-kosmichna-tekhnika',
   component: () => import('@/views/Spetsialnosti/AviatsiynaTaRaketnoKosmichnaTekhnika.vue')
@@ -65,87 +95,87 @@ const routes = [{
   component: () => import('@/views/Spetsialnosti/Ekonomika.vue')
 },
 {
-  path: '/abituriyentu/pidhotovchi-kursy',
+  path: '/abituriyent/pidhotovchi-kursy',
   name: 'pidhotovchi-kursy',
   component: () => import('@/views/Abituriyentu/PidhotovchiKursy.vue')
 },
 {
-  path: '/abituriyentu/pravyla-pryyomu',
+  path: '/abituriyent/pravyla-pryyomu',
   name: 'pravyla-pryyomu',
   component: () => import('@/views/Abituriyentu/PravylaPryyomu.vue')
 },
 {
-  path: '/abituriyentu/vstupna-kompaniya',
+  path: '/abituriyent/vstupna-kompaniya',
   name: 'vstupna-kompaniya',
   component: () => import('@/views/Abituriyentu/VstupnaKompaniya.vue')
 },
 {
-  path: '/abituriyentu/den-vidkrytykh-dverey',
+  path: '/abituriyent/den-vidkrytykh-dverey',
   name: 'den-vidkrytykh-dverey',
   component: () => import('@/views/Abituriyentu/DenVidkrytykhDverey.vue')
 },
 {
-  path: '/abituriyentu/prohrama-vstupnykh-ispytiv',
+  path: '/abituriyent/prohrama-vstupnykh-ispytiv',
   name: 'prohrama-vstupnykh-ispytiv',
   component: () => import('@/views/Abituriyentu/ProhramaVstupnykhIspytiv.vue')
 },
 {
-  path: '/abituriyentu/fakhovi-vyprobuvannya',
+  path: '/abituriyent/fakhovi-vyprobuvannya',
   name: 'fakhovi-vyprobuvannya',
   component: () => import('@/views/Abituriyentu/FakhoviVyprobuvannya.vue')
 },
 {
-  path: '/abituriyentu/vartist-navchannya',
+  path: '/abituriyent/vartist-navchannya',
   name: 'vartist-navchannya',
   component: () => import('@/views/Abituriyentu/VartistNavchannya.vue')
 },
 {
-  path: '/abituriyentu/reytynhovi-spysky',
+  path: '/abituriyent/reytynhovi-spysky',
   name: 'reytynhovi-spysky',
   component: () => import('@/views/Abituriyentu/ReytynhoviSpysky.vue')
 },
 {
-  path: '/abituriyentu/stypendialne-zabezpechennya',
+  path: '/abituriyent/stypendialne-zabezpechennya',
   name: 'stypendialne-zabezpechennya',
   component: () => import('@/views/Abituriyentu/StypendialneZabezpechennya.vue')
 },
 {
-  path: '/studentu/pratsevlashtuvannya',
+  path: '/student/pratsevlashtuvannya',
   name: 'pratsevlashtuvannya',
   component: () => import('@/views/Studentu/Pratsevlashtuvannya.vue')
 },
 {
-  path: '/studentu/elektronni-pidruchnyky',
+  path: '/student/elektronni-pidruchnyky',
   name: 'elektronni-pidruchnyky',
   component: () => import('@/views/Studentu/ElektronniPidruchnyky.vue')
 },
 {
-  path: '/studentu/hurtky',
+  path: '/student/hurtky',
   name: 'hurtky',
   component: () => import('@/views/Studentu/Hurtky.vue')
 },
 {
-  path: '/studentu/rekvizyty-oplaty',
+  path: '/student/rekvizyty-oplaty',
   name: 'rekvizyty-oplaty',
   component: () => import('@/views/Studentu/RekvizytyOplaty.vue')
 },
 {
-  path: '/metodychnyy-kabinet/atestatsiya-vykladachiv',
+  path: '/methodical-cabinet/atestatsiya-vykladachiv',
   name: 'atestatsiya-vykladachiv',
   component: () => import('@/views/MetodychnyyKabinet/AtestatsiyaVykladachiv.vue')
 },
 {
-  path: '/metodychnyy-kabinet/vnutrishni-polozhennya-koledzhu',
+  path: '/methodical-cabinet/vnutrishni-polozhennya-koledzhu',
   name: 'vnutrishni-polozhennya-koledzhu',
   component: () => import('@/views/MetodychnyyKabinet/VnutrishniPolozhennyaKoledzhu.vue')
 },
 {
-  path: '/metodychnyy-kabinet/zrazky-dokumentiv',
+  path: '/methodical-cabinet/zrazky-dokumentiv',
   name: 'zrazky-dokumentiv',
   component: () => import('@/views/MetodychnyyKabinet/ZrazkyDokumentiv.vue')
 },
 {
-  path: '/metodychnyy-kabinet/normatyvni-akty',
+  path: '/methodical-cabinet/normatyvni-akty',
   name: 'normatyvni-akty',
   component: () => import('@/views/MetodychnyyKabinet/NormatyvniAkty.vue')
 },
@@ -263,10 +293,8 @@ const routes = [{
 
 const router = new VueRouter({
   mode: 'history',
-  base: "/zac-cli/",
+  base: process.env.BASE_URL,
   routes,
 });
 
 export default router;
-
-//process.env.BASE_URL

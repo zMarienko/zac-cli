@@ -2,49 +2,45 @@
   <section class="popular-pages">
     <div class="container">
       <div class="popular-pages__row">
-        <div class="popular-pages__column">
-          <router-link
-            to="/abituriyentu/pidhotovchi-kursy"
-            class="popular-pages__item"
-          >
-            <span class="popular-pages__title">Пiдготовчi курси</span>
-          </router-link>
-          <router-link
-            to="/abituriyentu/vstupna-kompaniya"
-            class="popular-pages__item"
-          >
-            <span class="popular-pages__title">Вступна компанiя</span>
-          </router-link>
-        </div>
-        <div class="popular-pages__column">
-          <a
-            class="popular-pages__item"
-            href="http://zac.org.ua/uploads/2019-2020 2.XLS"
-          >
-            <span class="popular-pages__title">Розклад занять</span>
-          </a>
+        <router-link
+          to="/abituriyent/pidhotovchi-kursy"
+          class="popular-pages__item"
+        >
+          <span class="popular-pages__title">Пiдготовчi курси</span>
+        </router-link>
+        <router-link
+          to="/abituriyent/vstupna-kompaniya"
+          class="popular-pages__item"
+        >
+          <span class="popular-pages__title">Вступна компанiя</span>
+        </router-link>
 
-          <router-link
-            to="/abituriyentu/vartist-navchannya"
-            class="popular-pages__item"
-          >
-            <span class="popular-pages__title">Вартiсть навчання</span>
-          </router-link>
-        </div>
-        <div class="popular-pages__column">
-          <router-link
-            to="/abituriyentu/stypendialne-zabezpechennya"
-            class="popular-pages__item"
-          >
-            <span class="popular-pages__title">Стипендiальне забезпечення</span>
-          </router-link>
-          <router-link
-            to="/abituriyentu/den-vidkrytykh-dverey"
-            class="popular-pages__item"
-          >
-            <span class="popular-pages__title">День вiдкритих дверей</span>
-          </router-link>
-        </div>
+        <a
+          class="popular-pages__item"
+          href="http://zac.org.ua/uploads/2019-2020 2.XLS"
+        >
+          <span class="popular-pages__title">Розклад занять</span>
+        </a>
+
+        <router-link
+          to="/abituriyent/vartist-navchannya"
+          class="popular-pages__item"
+        >
+          <span class="popular-pages__title">Вартiсть навчання</span>
+        </router-link>
+
+        <router-link
+          to="/abituriyent/stypendialne-zabezpechennya"
+          class="popular-pages__item"
+        >
+          <span class="popular-pages__title">Стипендiальне забезпечення</span>
+        </router-link>
+        <router-link
+          to="/abituriyent/den-vidkrytykh-dverey"
+          class="popular-pages__item"
+        >
+          <span class="popular-pages__title">День вiдкритих дверей</span>
+        </router-link>
       </div>
     </div>
   </section>
@@ -56,13 +52,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 15px;
-  }
-
-  &__column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 33.33333%;
+    flex-wrap: wrap;
   }
 
   &__title {
@@ -71,6 +61,8 @@
   }
 
   &__item {
+    width: 33%;
+    margin: 5px 0px;
     padding: 15px;
     text-align: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
@@ -99,13 +91,23 @@
       }
     }
   }
+}
 
-  &__item + &__item {
-    margin-top: 10px;
+@media (max-width: 866px) {
+  .popular-pages__title {
+    font-size: 16px;
   }
+}
 
-  &__column + &__column {
-    margin-left: 10px;
+@media (max-width: 796px) {
+  .popular-pages__item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 575px) {
+  .popular-pages__item {
+    width: 100%;
   }
 }
 </style>

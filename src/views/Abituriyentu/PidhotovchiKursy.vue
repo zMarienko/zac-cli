@@ -72,18 +72,14 @@
         </div>
         <div class="default__quote">
           Телефон для довідок: &zwj;
-          <a class="footer__item-link" href="tel:+380617205526"
-            >(061) 720-55-26</a
+          <a class="default__tel" href="tel:+380617205526">(061) 720-55-26</a
           >&zwj; &zwj; &zwj;
-          <a class="footer__item-link" href="tel:+380612122152"
-            >(061) 212-21-52</a
+          <a class="default__tel" href="tel:+380612122152">(061) 212-21-52</a
           >&zwj; &zwj; &zwj;
-          <a class="footer__item-link" href="tel:+380951169877"
-            >(095) 116-98-77</a
-          >
+          <a class="default__tel" href="tel:+380951169877">(095) 116-98-77</a>
         </div>
         <div class="default__quote">
-          <router-link to="/studentu/rekvizyty-oplaty" class="default__link"
+          <router-link to="/student/rekvizyty-oplaty" class="default__link"
             >Реквізити оплати курсiв</router-link
           >
         </div>

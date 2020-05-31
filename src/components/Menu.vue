@@ -72,13 +72,13 @@
         </ul>
       </li>
       <li class="menu__item">
-        <router-link tag="button" to="/abituriyentu" class="menu__link"
+        <router-link tag="button" to="/abituriyent" class="menu__link"
           >Абiтурієнту</router-link
         >
         <ul class="menu__submenu">
           <router-link
             tag="li"
-            to="/abituriyentu/pidhotovchi-kursy"
+            to="/abituriyent/pidhotovchi-kursy"
             class="menu__item-submenu"
             >Пiдготовчi курси</router-link
           >
@@ -91,31 +91,31 @@
           </li>
           <router-link
             tag="li"
-            to="/abituriyentu/vstupna-kompaniya"
+            to="/abituriyent/vstupna-kompaniya"
             class="menu__item-submenu"
             >Вступна компанiя</router-link
           >
           <router-link
             tag="li"
-            to="/abituriyentu/den-vidkrytykh-dverey"
+            to="/abituriyent/den-vidkrytykh-dverey"
             class="menu__item-submenu"
             >День вiдкритих дверей</router-link
           >
           <router-link
             tag="li"
-            to="/abituriyentu/prohrama-vstupnykh-ispytiv"
+            to="/abituriyent/prohrama-vstupnykh-ispytiv"
             class="menu__item-submenu"
             >Програма вступних iспитiв</router-link
           >
           <router-link
             tag="li"
-            to="/abituriyentu/fakhovi-vyprobuvannya"
+            to="/abituriyent/fakhovi-vyprobuvannya"
             class="menu__item-submenu"
             >Фаховi випробування</router-link
           >
           <router-link
             tag="li"
-            to="/abituriyentu/vartist-navchannya"
+            to="/abituriyent/vartist-navchannya"
             class="menu__item-submenu"
             >Вартiсть навчання</router-link
           >
@@ -126,14 +126,14 @@
           </li>
           <router-link
             tag="li"
-            to="/abituriyentu/stypendialne-zabezpechennya"
+            to="/abituriyent/stypendialne-zabezpechennya"
             class="menu__item-submenu"
             >Стипендiальне забезпечення</router-link
           >
         </ul>
       </li>
       <li class="menu__item">
-        <router-link tag="button" to="/studentu" class="menu__link"
+        <router-link tag="button" to="/student" class="menu__link"
           >Студенту</router-link
         >
         <ul class="menu__submenu">
@@ -161,47 +161,47 @@
           </li>
           <router-link
             tag="li"
-            to="/studentu/pratsevlashtuvannya"
+            to="/student/pratsevlashtuvannya"
             class="menu__item-submenu"
             >Працевлаштування</router-link
           >
           <router-link
             tag="li"
-            to="/studentu/elektronni-pidruchnyky"
+            to="/student/elektronni-pidruchnyky"
             class="menu__item-submenu"
             >Електронні пiдручники</router-link
           >
-          <router-link tag="li" to="/studentu/hurtky" class="menu__item-submenu"
+          <router-link tag="li" to="/student/hurtky" class="menu__item-submenu"
             >Гуртки</router-link
           >
           <router-link
             tag="li"
-            to="/studentu/rekvizyty-oplaty"
+            to="/student/rekvizyty-oplaty"
             class="menu__item-submenu"
             >Реквiзити оплаты</router-link
           >
         </ul>
       </li>
       <li class="menu__item">
-        <router-link tag="button" to="/metodychnyy-kabinet" class="menu__link"
+        <router-link tag="button" to="/methodical-cabinet" class="menu__link"
           >Методичний кабiнет</router-link
         >
         <ul class="menu__submenu">
           <router-link
             tag="li"
-            to="/metodychnyy-kabinet/atestatsiya-vykladachiv"
+            to="/methodical-cabinet/atestatsiya-vykladachiv"
             class="menu__item-submenu"
             >Атестація викладачів</router-link
           >
           <router-link
             tag="li"
-            to="/metodychnyy-kabinet/vnutrishni-polozhennya-koledzhu"
+            to="/methodical-cabinet/vnutrishni-polozhennya-koledzhu"
             class="menu__item-submenu"
             >Внутрішні положення коледжу</router-link
           >
           <router-link
             tag="li"
-            to="/metodychnyy-kabinet/zrazky-dokumentiv"
+            to="/methodical-cabinet/zrazky-dokumentiv"
             class="menu__item-submenu"
             >Зразки документів</router-link
           >
@@ -215,7 +215,7 @@
           </li>
           <router-link
             tag="li"
-            to="/metodychnyy-kabinet/normatyvni-akty"
+            to="/methodical-cabinet/normatyvni-akty"
             class="menu__item-submenu"
             >Нормативні акти</router-link
           >
@@ -472,6 +472,62 @@
     &--ptsk {
       min-width: 300px;
     }
+  }
+}
+@media (max-width: 1000px) {
+  .menu__submenu--ptsk {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 970px) {
+  .menu__link {
+    font-size: 14px;
+  }
+  .menu__item-submenu {
+    font-size: 14px;
+  }
+  .menu__submenu--ptsk {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 880px) {
+  .menu__link {
+    padding: 10px 10px;
+  }
+  .menu__inner {
+    padding: 0px 5px;
+  }
+  .menu__submenu--ptsk {
+    min-width: 230px;
+  }
+}
+
+@media (max-width: 812px) {
+  .menu__link {
+    padding: 10px 7px;
+  }
+  .menu__inner {
+    padding: 0px 8px;
+  }
+  .menu__submenu--ptsk {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 771px) {
+  .menu__link {
+    padding: 10px 5px;
+  }
+  .menu__inner {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 752px) {
+  .menu {
+    display: none;
   }
 }
 </style>

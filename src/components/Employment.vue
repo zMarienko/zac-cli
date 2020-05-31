@@ -1,14 +1,15 @@
 <template>
   <section class="employment">
     <div class="container">
-      <div class="employment__inner main-title">
-        <div class="employment__title">Працевлаштування студентiв</div>
+      <div class="employment__inner">
+        <div class="employment__title main-title">
+          Працевлаштування студентiв
+        </div>
         <router-link
-          tag="button"
-          to="/studentu/pratsevlashtuvannya"
-          class="employment__btn common-button"
+          to="/student/pratsevlashtuvannya"
+          class="employment__btn blue-button"
         >
-          <span class="employment__link">Детальнiше</span>
+          Детальнiше
         </router-link>
       </div>
     </div>
@@ -29,31 +30,61 @@
   }
 
   &__btn {
-    padding: 10px 50px;
+    padding: 13px 50px;
     margin-left: auto;
     margin-right: 30px;
     align-self: center;
     font-size: 24px;
-  }
-
-  &__link {
     color: #fff;
   }
 }
 
-.common-button {
-  border-radius: 3px;
-  border: 1px solid darken(#fff, 20%);
-  background-image: linear-gradient(
-    to right,
-    #336ec7 0%,
-    #ffffff 70%,
-    #336ec7 100%
-  );
-  transition: 0.7s;
-  background-size: 500% auto;
-  &:hover {
-    background-position: right center;
+@media (max-width: 957px) {
+  .employment__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 866px) {
+  .employment__title {
+    font-size: 24px;
+  }
+  .employment__btn {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .employment__link {
+    font-size: 16px;
+  }
+  .employment__btn {
+    margin-right: 10px;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 485px) {
+  .employment__title {
+    font-size: 20px;
+  }
+  .employment__btn {
+    margin-right: 10px;
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .employment__title {
+    font-size: 16px;
+    padding: 15px 15px;
+  }
+
+  .employment__link {
+    font-size: 14px;
+  }
+  .employment__btn {
+    padding: 10px 10px;
   }
 }
 </style>
