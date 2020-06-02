@@ -3,7 +3,7 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Атестація викладачів
+          {{ $t('title') }}
         </div>
         <div class="default__quote">
           <a
@@ -11,7 +11,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/metodist/Harakteristika.pdf"
           >
-            Характеристика викладача.
+            {{ $t('paragraph1') }}
           </a>
         </div>
         <div class="default__quote">
@@ -20,11 +20,25 @@
             class="default__link"
             href="http://zac.org.ua/uploads/metodist/Kartka-zrazok.pdf"
           >
-            Картка-зразок комплексної оцінки професійної діяльності
-            педагогічного працівника в міжатестаційний період.
+            {{ $t('paragraph2') }}
           </a>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "title": "Атестація викладачів",
+    "paragraph1": "Характеристика викладача.",
+    "paragraph2": "Картка-зразок комплексної оцінки професійної діяльності педагогічного працівника в міжатестаційний період."
+  },
+  "ru": {
+    "title": "Аттестация преподавателей",
+    "paragraph1": "Характеристика преподавателя.",
+    "paragraph2": "Карточка-образец комплексной оценки профессиональной деятельности педагога в межаттестационный период."
+    }
+}
+</i18n>

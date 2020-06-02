@@ -19,7 +19,7 @@
   </main>
 </template>
 
-<script>
+<script lang="babel">
 export default {
   name: 'post',
   computed: {

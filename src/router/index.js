@@ -100,11 +100,6 @@ const routes = [{
   component: () => import('@/views/Abituriyentu/PidhotovchiKursy.vue')
 },
 {
-  path: '/abituriyent/pravyla-pryyomu',
-  name: 'pravyla-pryyomu',
-  component: () => import('@/views/Abituriyentu/PravylaPryyomu.vue')
-},
-{
   path: '/abituriyent/vstupna-kompaniya',
   name: 'vstupna-kompaniya',
   component: () => import('@/views/Abituriyentu/VstupnaKompaniya.vue')
@@ -130,14 +125,14 @@ const routes = [{
   component: () => import('@/views/Abituriyentu/VartistNavchannya.vue')
 },
 {
-  path: '/abituriyent/reytynhovi-spysky',
-  name: 'reytynhovi-spysky',
-  component: () => import('@/views/Abituriyentu/ReytynhoviSpysky.vue')
-},
-{
   path: '/abituriyent/stypendialne-zabezpechennya',
   name: 'stypendialne-zabezpechennya',
   component: () => import('@/views/Abituriyentu/StypendialneZabezpechennya.vue')
+},
+{
+  path: '/student/zminy-v-rozkladi',
+  name: 'zminy-v-rozkladi',
+  component: () => import('@/views/Studentu/ZminyVRozkladi.vue')
 },
 {
   path: '/student/pratsevlashtuvannya',

@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script>
+<script lang="babel">
 import Slider from '@/components/Slider';
 import PopularPages from '@/components/PopularPages';
 import Steps from '@/components/Steps';

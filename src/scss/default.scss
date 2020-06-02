@@ -234,21 +234,26 @@
       font-size: 28px;
 
       &--row {
-         font-size: 22px;
+         font-size: 20px;
+      }
+   }
+}
+
+@media (max-width: 760px) {
+   .default__inner {
+      &--row {
+         flex-direction: column;
       }
    }
 
-}
-
-@media (max-width: 770px) {
-   .default__title--row {
-      font-size: 20px;
-      padding: 10px 15px;
+   .default__title {
+      &--row {
+         align-self: center;
+         text-align: center;
+      }
    }
 
    .default__btn {
-      font-size: 18px;
-      padding: 10px 15px;
-      margin-right: 20px;
+      margin: 0 auto;
    }
 }

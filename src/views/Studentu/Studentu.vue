@@ -4,89 +4,88 @@
       <div class="default__inner">
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Розклад навчальних занять
+            {{ $t('menu__item5-submenu1') }}
           </div>
           <a
             href="http://zac.org.ua/uploads/2019-2020 2.XLS"
             class="default__btn blue-button"
           >
-            Детальнiше
+            {{ $t('more__btn') }}
           </a>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Змiни в розкладi
+            {{ $t('menu__item5-submenu2') }}
           </div>
-          <a
-            target="_blank"
-            href="https://docs.google.com/document/d/15sTjEGGQPuYWYlCcPlbZNSkSwoC1Aubdu5dAVtF1hzs/edit"
+          <router-link
+            to="/student/zminy-v-rozkladi"
             class="default__btn blue-button"
           >
-            Детальнiше
-          </a>
+            {{ $t('more__btn') }}
+          </router-link>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Графiк консультацiй викладачiв
+            {{ $t('menu__item5-submenu3') }}
           </div>
           <a
             target="_blank"
             href="http://zac.org.ua/uploads/grafic%20cons%20dist.pdf"
             class="default__btn blue-button"
           >
-            Детальнiше
+            {{ $t('more__btn') }}
           </a>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Зразок штампу А4
+            {{ $t('menu__item5-submenu4') }}
           </div>
           <a
             href="http://zac.org.ua/uploads/stamp.rar"
             class="default__btn blue-button"
           >
-            Детальнiше
+            {{ $t('more__btn') }}
           </a>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Працевлаштування
+            {{ $t('menu__item5-submenu5') }}
           </div>
           <router-link
             to="/student/pratsevlashtuvannya"
             class="default__btn blue-button"
           >
-            Детальнiше
+            {{ $t('more__btn') }}
           </router-link>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Електронні пiдручники
+            {{ $t('menu__item5-submenu6') }}
           </div>
           <router-link
             to="/student/elektronni-pidruchnyky"
             class="default__btn blue-button"
           >
-            Детальнiше
+            {{ $t('more__btn') }}
           </router-link>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Гуртки
+            {{ $t('menu__item5-submenu7') }}
           </div>
           <router-link to="/student/hurtky" class="default__btn blue-button">
-            Детальнiше
+            {{ $t('more__btn') }}
           </router-link>
         </div>
         <div class="default__inner default__inner--row">
           <div class="default__title default__title--row main-title">
-            Реквiзити оплаты
+            {{ $t('menu__item5-submenu8') }}
           </div>
           <router-link
             to="/student/rekvizyty-oplaty"
             class="default__btn blue-button"
           >
-            Детальнiше
+            {{ $t('more__btn') }}
           </router-link>
         </div>
       </div>

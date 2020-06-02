@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script>
+<script lang="babel">
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 

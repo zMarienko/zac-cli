@@ -3,13 +3,15 @@
     <div class="container">
       <div class="steps__inner">
         <div class="steps__title main-title">
-          <h2>Як поступити до коледжу?</h2>
+          <h2>{{ $t('steps__title') }}</h2>
         </div>
         <div class="steps__menu">
           <button class="steps__button main-title steps__button--active">
-            На бюджет
+            {{ $t('steps__button1') }}
           </button>
-          <button class="steps__button main-title">На контракт</button>
+          <button class="steps__button main-title">
+            {{ $t('steps__button2') }}
+          </button>
         </div>
         <div class="steps__box">
           <div class="steps__box-item steps__box-item--blue">
@@ -19,10 +21,9 @@
               alt="Шаг 1. Подать заявку"
             />
             <div class="steps__box-text">
-              <p>Подайте заявку до вступу.</p>
+              <p>{{ $t('steps__box-text1.1') }}</p>
               <p>
-                Вступ по програмi бюджету здійснюється на підставі свiдотства
-                про здобуття базової середньої освіти
+                {{ $t('steps__box-text1.2') }}
               </p>
             </div>
           </div>
@@ -34,8 +35,7 @@
             />
             <div class="steps__box-text">
               <p>
-                Надайте до приймальної комісії документи про поточний рівень
-                освіти
+                {{ $t('steps__box-text2') }}
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@
               alt="Шаг 3. Здайте вступнi випробування"
             />
             <div class="steps__box-text">
-              <p>Здайте внутрішні вступні випробування коледжу</p>
+              <p>{{ $t('steps__box-text3') }}</p>
             </div>
           </div>
           <div class="steps__box-item steps__box-item--red">
@@ -56,7 +56,7 @@
               alt="Шаг 4. Отримайте документи про зарахування"
             />
             <div class="steps__box-text">
-              <p>Отримайте документи про зарахування і студентський квиток</p>
+              <p>{{ $t('steps__box-text4') }}</p>
             </div>
           </div>
         </div>
@@ -64,6 +64,31 @@
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "steps__title": "Як поступити до коледжу?",
+    "steps__button1": "На бюджет",
+    "steps__button2": "На контракт",
+    "steps__box-text1.1": "Подайте заявку до вступу.",
+    "steps__box-text1.2": "Вступ по програмi бюджету здійснюється на підставі свiдотства про здобуття базової середньої освіти",
+    "steps__box-text2": "Надайте до приймальної комісії документи про поточний рівень освіти",
+    "steps__box-text3": "Здайте внутрішні вступні випробування коледжу",
+    "steps__box-text4": "Отримайте документи про зарахування і студентський квиток"
+  },
+  "ru": {
+    "steps__title": "Как поступить в колледж?",
+    "steps__button1": "На бюджет",
+    "steps__button2": "На контракт",
+    "steps__box-text1.1": "Подайте заявку для поступления.",
+    "steps__box-text1.2": "Вступление по программе бюджета осуществляется на основании свидетельства о получении базового среднего образования",
+    "steps__box-text2": "Предоставьте в приемную комиссию документы о текущем уровне образования",
+    "steps__box-text3": "Сдайте внутренние вступительные испытания колледжа",
+    "steps__box-text4": "Получите документы о зачислении и студенческий билет"
+    }
+}
+</i18n>
 
 <style lang="scss">
 .steps {

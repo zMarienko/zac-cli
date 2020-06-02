@@ -8,24 +8,30 @@
           </router-link>
           <div class="header__name">
             <router-link to="/admin/news/new">
-              <h1 class="header__title">
-                Запорiзький авiацiйний коледж iм. О.Г. Iвченка
-              </h1>
+              <h1 v-html="$t('header__title')" class="header__title"></h1>
             </router-link>
             <h2 class="header__subtitle">
-              Мiнiстерство освіти i науки України
+              {{ $t('header__subtitle') }}
             </h2>
             <div class="header__land land">
-              <button class="land__ua land__selected">
-                <a class="land__ua-link">Укр.</a>
+              <button
+                v-bind:class="{ land__selected: localeUA }"
+                class="land__ua"
+                v-on:click="($root.$i18n.locale = 'ua'), (localeUA = true)"
+              >
+                Укр.
               </button>
-              <button class="land__ru">
-                <a class="land__ua-link">Рус.</a>
+              <button
+                v-bind:class="{ land__selected: !localeUA }"
+                class="land__ru"
+                v-on:click="($root.$i18n.locale = 'ru'), (localeUA = false)"
+              >
+                Рус.
               </button>
             </div>
           </div>
           <div class="header__btn">
-            <button class="mobile__btn"></button>
+            <MobileMenu />
           </div>
         </div>
       </div>
@@ -38,11 +44,31 @@
   </header>
 </template>
 
-<script>
+<i18n>
+{
+  "ua": {
+    "header__title": "Запорiзький авiацiйний <br> коледж iм. О.Г. Iвченка",
+    "header__subtitle": " Мiнiстерство освіти i науки України"
+  },
+  "ru": {
+    "header__title": "Запорожский авиационный <br> колледж им. О.Г. Ивченко",
+    "header__subtitle": "Министерство образования и науки Украины"
+  }
+}
+</i18n>
+
+<script lang="babel">
 import Menu from '@/components/Menu';
+import MobileMenu from '@/components/MobileMenu';
 
 export default {
-  components: { Menu },
+  components: { Menu, MobileMenu },
+
+  data: function() {
+    return {
+      localeUA: true,
+    };
+  },
 };
 </script>
 
@@ -60,6 +86,7 @@ export default {
   &__logo {
     max-height: 100px;
     margin: 10px 15px;
+    z-index: 3;
   }
 
   &__name {
@@ -74,14 +101,15 @@ export default {
     font-weight: 700;
     color: #1c537a;
     font-size: 34px;
-    width: 380px;
+    width: 420px;
+    white-space: nowrap;
   }
 
   &__subtitle {
     text-align: center;
     color: #1c537a;
     font-size: 22px;
-    padding: 0px 15px;
+    padding: 0px 15px 0px 30px;
     transform: translateY(-30px);
     text-transform: uppercase;
     align-self: flex-end;
@@ -89,14 +117,12 @@ export default {
 
   &__land {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 15px;
   }
 
   &__btn {
     display: none;
-    align-self: center;
-    padding-right: 15px;
   }
 
   &__menu {
@@ -105,143 +131,106 @@ export default {
   }
 }
 
-@media (max-width: 900px) {
-  .header__subtitle {
-    max-width: 312px;
-  }
-
-  .header__land {
-    top: 0px;
-    right: 110px;
-  }
-}
-
-@media (max-width: 752px) {
-  .menu {
-    display: none;
-  }
-  .header__title {
-    font-size: 30px;
-    max-width: 340px;
-  }
-  .header__subtitle {
-    display: none;
-  }
+@media (max-width: 1075px) {
   .header__land {
     top: auto;
     right: auto;
     left: 0px;
     bottom: 10px;
   }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .header__subtitle {
+    display: none;
+  }
+
   .header__btn {
     display: block;
-    margin: auto 15px;
-  }
-}
-
-@media (max-width: 520px) {
-  .header__title {
-    font-size: 26px;
-    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
   }
 
-  .header__logo {
-    max-height: 90px;
-  }
-}
-
-@media (max-width: 485px) {
   .header__top-inner {
     justify-content: center;
   }
 
-  .header__logo {
-    height: 70px;
-  }
-
   .header__title {
-    font-size: 24px;
-  }
-
-  .header__name {
-    min-width: 270px;
-    max-width: 270px;
-    transform: translateY(-7px);
-  }
-
-  .header__land {
-    bottom: -2px;
-  }
-  .header__btn {
-    padding-right: 0px;
-  }
-}
-
-@media (max-width: 420px) {
-  .header__title {
-    font-size: 20px;
-    min-width: 222px;
-    max-width: 222px;
-  }
-
-  .header__name {
-    min-width: 222px;
-    max-width: 222px;
-    transform: translateY(0px);
+    font-size: 26px;
+    width: 200px;
   }
 
   .header__land {
     bottom: 5px;
   }
-}
 
-@media (max-width: 360px) {
-  .header__title {
-    font-size: 18px;
-    min-width: 200px;
-    max-width: 200px;
-  }
-
-  .header__name {
-    min-width: 200px;
-    max-width: 200px;
-  }
-
-  .land__ua,
-  .land__ru {
-    font-size: 10px;
-    height: 15px;
-    width: 30px;
-  }
-
-  .header__land {
-    bottom: 7px;
-  }
-}
-
-@media (max-width: 342px) {
   .header__logo {
-    height: 60px;
-    margin: 10px 10px;
+    max-height: 80px;
   }
+}
 
+@media (max-width: 500px) {
+  .header__title {
+    font-size: 22px;
+    transform: translateY(-5px);
+  }
+  .header__logo {
+    max-height: 70px;
+  }
+  .header__land {
+    bottom: 8px;
+  }
+}
+
+@media (max-width: 420px) {
   .header__title {
     font-size: 18px;
-    min-width: 200px;
-    max-width: 200px;
-  }
-
-  .header__name {
-    min-width: 180px;
-    max-width: 180px;
   }
 
   .header__land {
-    bottom: 3px;
+    bottom: 5px;
   }
 
-  .header__btn {
-    margin-left: 25px;
+  .header__logo {
+    max-height: 65px;
+  }
+}
+
+@media (max-width: 390px) {
+  .header__title {
+    font-size: 16px;
+    width: 160px;
+  }
+
+  .header__land {
+    bottom: 5px;
+  }
+  .header__logo {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__title {
+    font-size: 16px;
+    width: 160px;
+    transform: translateY(-5px);
+  }
+
+  .header__land {
+    bottom: 10px;
+  }
+  .header__logo {
+    max-height: 60px;
+    margin-right: 5px;
   }
 }
 </style>

@@ -3,18 +3,29 @@
     <div class="container">
       <div class="employment__inner">
         <div class="employment__title main-title">
-          Працевлаштування студентiв
+          {{ $t('employment__title') }}
         </div>
         <router-link
           to="/student/pratsevlashtuvannya"
           class="employment__btn blue-button"
         >
-          Детальнiше
+          {{ $t('more__btn') }}
         </router-link>
       </div>
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "employment__title": "Працевлаштування студентiв"
+  },
+  "ru": {
+    "employment__title": "Трудоустройство студентов"
+    }
+}
+</i18n>
 
 <style lang="scss">
 .employment {

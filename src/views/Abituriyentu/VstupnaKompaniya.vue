@@ -3,7 +3,7 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Етапи вступной компанiї
+          {{ $t('title') }}
         </div>
         <div class="default__images default__images--update">
           <img
@@ -23,3 +23,14 @@
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "title": "Етапи вступной компанiї"
+  },
+  "ru": {
+    "title": "Этапы вступительной кампании"
+    }
+}
+</i18n>

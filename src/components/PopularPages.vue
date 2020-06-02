@@ -6,40 +6,52 @@
           to="/abituriyent/pidhotovchi-kursy"
           class="popular-pages__item"
         >
-          <span class="popular-pages__title">Пiдготовчi курси</span>
+          <span class="popular-pages__title">{{
+            $t('menu__item4-submenu1')
+          }}</span>
         </router-link>
         <router-link
           to="/abituriyent/vstupna-kompaniya"
           class="popular-pages__item"
         >
-          <span class="popular-pages__title">Вступна компанiя</span>
+          <span class="popular-pages__title">{{
+            $t('menu__item4-submenu3')
+          }}</span>
         </router-link>
 
         <a
           class="popular-pages__item"
           href="http://zac.org.ua/uploads/2019-2020 2.XLS"
         >
-          <span class="popular-pages__title">Розклад занять</span>
+          <span class="popular-pages__title">{{
+            $t('menu__item5-submenu1')
+          }}</span>
         </a>
 
         <router-link
           to="/abituriyent/vartist-navchannya"
           class="popular-pages__item"
         >
-          <span class="popular-pages__title">Вартiсть навчання</span>
+          <span class="popular-pages__title">{{
+            $t('menu__item4-submenu7')
+          }}</span>
         </router-link>
 
         <router-link
           to="/abituriyent/stypendialne-zabezpechennya"
           class="popular-pages__item"
         >
-          <span class="popular-pages__title">Стипендiальне забезпечення</span>
+          <span class="popular-pages__title">{{
+            $t('menu__item4-submenu9')
+          }}</span>
         </router-link>
         <router-link
           to="/abituriyent/den-vidkrytykh-dverey"
           class="popular-pages__item"
         >
-          <span class="popular-pages__title">День вiдкритих дверей</span>
+          <span class="popular-pages__title">{{
+            $t('menu__item4-submenu4')
+          }}</span>
         </router-link>
       </div>
     </div>

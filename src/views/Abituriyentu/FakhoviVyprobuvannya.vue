@@ -3,7 +3,7 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Програми фахових вступних випробувань
+          {{ $t('title') }}
         </div>
 
         <div class="default__quote">
@@ -12,7 +12,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/AKT.pdf"
           >
-            Авіаційна та ракетно-космічна техніка.
+            {{ $t('paragraph1') }}
           </a>
         </div>
         <div class="default__quote">
@@ -21,7 +21,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/M.pdf"
           >
-            Металургія.
+            {{ $t('paragraph2') }}
           </a>
         </div>
         <div class="default__quote">
@@ -30,7 +30,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/GM.pdf"
           >
-            Галузеве машинобудування.
+            {{ $t('paragraph3') }}
           </a>
         </div>
         <div class="default__quote">
@@ -39,7 +39,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/PM.pdf"
           >
-            Прикладна механіка.
+            {{ $t('paragraph4') }}
           </a>
         </div>
         <div class="default__quote">
@@ -48,7 +48,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/KN.pdf"
           >
-            Комп'ютерні науки та інформаційні технології.
+            {{ $t('paragraph5') }}
           </a>
         </div>
         <div class="default__quote">
@@ -57,7 +57,7 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/KI.pdf"
           >
-            Комп'ютерна інженерія.
+            {{ $t('paragraph6') }}
           </a>
         </div>
         <div class="default__quote">
@@ -66,10 +66,35 @@
             class="default__link"
             href="http://zac.org.ua/uploads/priom/E.pdf"
           >
-            Економіка.
+            {{ $t('paragraph7') }}
           </a>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "title": "Програми фахових вступних випробувань",
+    "paragraph1": "Авіаційна та ракетно-космічна техніка.",
+    "paragraph2": "Металургія.",
+    "paragraph3": "Галузеве машинобудування.",
+    "paragraph4": "Прикладна механіка.",
+    "paragraph5": "Комп'ютерні науки та інформаційні технології.",
+    "paragraph6": "Комп'ютерна інженерія.",
+    "paragraph7": "Економіка."
+  },
+  "ru": {
+    "title": "Программы вступительных испытаний",
+    "paragraph1": "Авиационная и ракетно-космическая техника.",
+    "paragraph2": "Металлургия.",
+    "paragraph3": "Отраслевое машиностроение.",
+    "paragraph4": "Прикладная механика.",
+    "paragraph5": "Компьютерные науки и информационные технологии.",
+    "paragraph6": "Компьютерная инженерия.",
+    "paragraph7": "Экономика."
+    }
+}
+</i18n>

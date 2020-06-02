@@ -40,7 +40,6 @@
           <img class="default__img" src="/img/sportyvne-zhyttya/13.jpg" />
           <img class="default__img" src="/img/sportyvne-zhyttya/14.jpg" />
           <img class="default__img" src="/img/sportyvne-zhyttya/15.jpg" />
-          <img class="default__img" src="/img/sportyvne-zhyttya/16.jpg" />
           <img class="default__img" src="/img/sportyvne-zhyttya/17.jpg" />
           <img class="default__img" src="/img/sportyvne-zhyttya/18.jpg" />
           <img class="default__img" src="/img/sportyvne-zhyttya/19.jpg" />
