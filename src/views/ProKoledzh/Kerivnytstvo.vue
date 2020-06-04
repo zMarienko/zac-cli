@@ -3,7 +3,7 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Керівництво коледжу
+          {{ $t('title') }}
         </div>
         <div class="default__content">
           <div class="default__row">
@@ -11,10 +11,10 @@
               <img src="/img/dudnikov.png" class="default__item-img " />
               <div class="default__item-name">
                 <div class="default__item-title main-title">
-                  Дудников Олександр Сергiйович
+                  {{ $t('item1.1') }}
                 </div>
                 <div class="default__item-subtitle">
-                  Директор коледжу
+                  {{ $t('item1.2') }}
                 </div>
               </div>
             </div>
@@ -22,10 +22,10 @@
               <img src="/img/pavlova.jpg" class="default__item-img " />
               <div class="default__item-name">
                 <div class="default__item-title main-title">
-                  Павлова Кристина Василiвна
+                  {{ $t('item2.1') }}
                 </div>
                 <div class="default__item-subtitle">
-                  Заступник директора з навчальної роботи
+                  {{ $t('item2.2') }}
                 </div>
               </div>
             </div>
@@ -35,10 +35,10 @@
               <img src="/img/snizhko.png" class="default__item-img " />
               <div class="default__item-name">
                 <div class="default__item-title main-title">
-                  Снiжко Вiктор Іванович
+                  {{ $t('item3.1') }}
                 </div>
                 <div class="default__item-subtitle">
-                  Заступник директора з навчально-виробничої роботи
+                  {{ $t('item3.2') }}
                 </div>
               </div>
             </div>
@@ -46,10 +46,10 @@
               <img src="/img/zapgrodskaya.jpg" class="default__item-img " />
               <div class="default__item-name">
                 <div class="default__item-title main-title">
-                  Павлова Кристина Василiвна
+                  {{ $t('item4.1') }}
                 </div>
                 <div class="default__item-subtitle">
-                  Заступник директора з виховної роботи
+                  {{ $t('item4.2') }}
                 </div>
               </div>
             </div>
@@ -59,10 +59,10 @@
               <img src="/img/nopicture.jpg" class="default__item-img " />
               <div class="default__item-name">
                 <div class="default__item-title main-title">
-                  Бабченко Валентин Вікторович
+                  {{ $t('item5.1') }}
                 </div>
                 <div class="default__item-subtitle">
-                  Заступник директора з адміністративно-господарської роботи
+                  {{ $t('item5.2') }}
                 </div>
               </div>
             </div>
@@ -70,10 +70,10 @@
               <img src="/img/nopicture.jpg" class="default__item-img " />
               <div class="default__item-name ">
                 <div class="default__item-title main-title">
-                  Рожковська Ольга Вадимівна
+                  {{ $t('item6.1') }}
                 </div>
                 <div class="default__item-subtitle">
-                  Голова ППО авіабудівників
+                  {{ $t('item6.2') }}
                 </div>
               </div>
             </div>
@@ -83,6 +83,41 @@
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "title": "Керівництво коледжу",
+    "item1.1": "Дудников Олександр Сергiйович",
+    "item1.2": "Директор коледжу",
+    "item2.1": "Павлова Кристина Василiвна",
+    "item2.2": "Заступник директора з навчальної роботи",
+    "item3.1": "Снiжко Вiктор Іванович",
+    "item3.2": "Заступник директора з навчально-виробничої роботи",
+    "item4.1": "Павлова Кристина Василiвна",
+    "item4.2": "Заступник директора з виховної роботи",
+    "item5.1": "Бабченко Валентин Вікторович",
+    "item5.2": "Заступник директора з адміністративно-господарської роботи",
+    "item6.1": "Рожковська Ольга Вадимівна",
+    "item6.2": "Голова ППО авіабудівників"
+  },
+  "ru": {
+    "title": "Руководство колледжа",
+    "item1.1": "Дудников Александр Сергеевич",
+    "item1.2": "Директор колледжа",
+    "item2.1": "Павлова Кристина Васильевна",
+    "item2.2": "Заместитель директора по учебной работе",
+    "item3.1": "Снижко Виктор Иванович",
+    "item3.2": "Заместитель директора по учебно-производственной работе",
+    "item4.1": "Павлова Кристина Васильевна",
+    "item4.2": "Заместитель директора по воспитательной работе",
+    "item5.1": "Бабченко Валентин Викторович",
+    "item5.2": "Заместитель директора по административно-хозяйственной работе",
+    "item6.1": "Рожковская Ольга Вадимовна",
+    "item6.2": "Председатель ПВО авиастроителей"
+    }
+}
+</i18n>
 
 <style lang="scss" scoped>
 .default {

@@ -196,7 +196,7 @@ export default {
   }
 
   .header__land {
-    bottom: 5px;
+    bottom: 9px;
   }
 
   .header__logo {
@@ -211,7 +211,7 @@ export default {
   }
 
   .header__land {
-    bottom: 5px;
+    bottom: 8px;
   }
   .header__logo {
     max-height: 60px;

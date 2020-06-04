@@ -3,17 +3,17 @@
     <div class="container">
       <div class="default__inner">
         <div class="default__title main-title">
-          Нормативнi документи
+          {{ $t('title') }}
         </div>
         <div class="default__quote">
           <a class="default__link" href="http://zac.org.ua/prav/statut.DOC">
-            Статут "Запорізький авіаційний коледж ім. О.Г. Івченко"
+            {{ $t('item1') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/poloshennya_styp_kom.doc"
           >
-            Положення про стипендіальну комісію
+            {{ $t('item2') }}
           </a>
         </div>
         <div class="default__quote">
@@ -22,14 +22,14 @@
             class="default__link"
             href="http://zac.org.ua/uploads/metodist/kodeks%20dobrochesnosti.pdf"
           >
-            Кодекс академічної доброчесності
+            {{ $t('item3') }}
           </a>
           <a
             target="_blank"
             class="default__link"
             href="http://zac.org.ua/uploads/pravila%20stypendiya.pdf"
           >
-            Правила призначення та виплати стипендій студентам Запорізького
+            {{ $t('item4') }}
           </a>
 
           <a
@@ -37,14 +37,14 @@
             class="default__link"
             href="http://zac.org.ua/uploads/vybory/zakon.PDF"
           >
-            Закон України Про вищу освіту витяг
+            {{ $t('item5') }}
           </a>
           <a
             target="_blank"
             class="default__link"
             href="http://zac.org.ua/uploads/viddil%20kadriv/posadova%20vykladacha.pdf"
           >
-            Посадова інструкція викладача
+            {{ $t('item6') }}
           </a>
         </div>
         <div class="default__quote">
@@ -52,16 +52,16 @@
             class="default__link"
             href="http://zac.org.ua/uploads/polozhennya%20pro%20pravovu%20komIsIyu.doc"
           >
-            Положення про правову комісію
+            {{ $t('item7') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/Polozhennya%20pro%20kerivnika%20grupi.doc"
           >
-            Положення про керівника групи Зак
+            {{ $t('item8') }}
           </a>
           <a class="default__link" href="http://zac.org.ua/uploads/123456.doc">
-            Положення конкурсу "Калейдоскоп талантів"
+            {{ $t('item9') }}
           </a>
         </div>
         <div class="default__quote">
@@ -69,31 +69,31 @@
             class="default__link"
             href="http://zac.org.ua/uploads/files/1354534147_zapobgannya-nasilstvu.doc"
           >
-            Наказ про запобігання насильству
+            {{ $t('item10') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/files/1354534176_zapobgannya-tyutyunokurnnya.doc"
           >
-            Наказ про запобігання тютюнокуріння
+            {{ $t('item11') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/files/1354534184_na-poselennya-u-gurtozhitok.doc"
           >
-            Наказ на поселення в гуртожиток
+            {{ $t('item12') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/files/1354534198_pro-vdznachennya-do-dnya-studentov.doc"
           >
-            Наказ про відзначення Дня студента
+            {{ $t('item13') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/files/1354534148_pro-priznachennya-ker.gup-2012-13.doc"
           >
-            Наказ про призначення керівникiв груп 2012-2013
+            {{ $t('item14') }}
           </a>
         </div>
         <div class="default__quote">
@@ -101,14 +101,13 @@
             class="default__link"
             href="http://zac.org.ua/uploads/instruktag_winter.doc"
           >
-            Iнструкцiя з безпеки життєдіяльностістудентів під час зимових
-            канікул
+            {{ $t('item15') }}
           </a>
           <a
             class="default__link"
             href="http://zac.org.ua/uploads/vstup_instruktag.doc"
           >
-            Iнструкцiя вступного інструктажу з безпеки життєдіяльності студентів
+            {{ $t('item16') }}
           </a>
         </div>
         <div class="default__quote">
@@ -116,10 +115,55 @@
             class="default__link"
             href="http://zac.org.ua/uploads/spisok%20studentov%20shablon12.doc"
           >
-            Шаблон списку студентiв
+            {{ $t('item17') }}
           </a>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<i18n>
+{
+  "ua": {
+    "title": "Нормативнi документи",
+    "item1": "Статут 'Запорізький авіаційний коледж ім. О.Г. Івченко'",
+    "item2": "Кодекс академічної доброчесності",
+    "item3": "Положення про стипендіальну комісію",
+    "item4": "Правила призначення та виплати стипендій студентам Запорізького",
+    "item5": "Закон України Про вищу освіту витяг",
+    "item6": "Посадова інструкція викладача",
+    "item7": "Положення про правову комісію",
+    "item8": "Положення про керівника групи ЗАК",
+    "item9": "Положення конкурсу 'Калейдоскоп талантів'",
+    "item10": "Наказ про запобігання насильству",
+    "item11": "Наказ про запобігання тютюнокуріння",
+    "item12": "Наказ на поселення в гуртожиток",
+    "item13": "Наказ про відзначення Дня студента",
+    "item14": "Наказ про призначення керівникiв груп 2012-2013",
+    "item15": "Iнструкцiя з безпеки життєдіяльності студентів під час зимових канікул",
+    "item16": "Iнструкцiя вступного інструктажу з безпеки життєдіяльності студентів",
+    "item17": "Шаблон списку студентiв"
+  },
+  "ru": {
+    "title": "Нормативные документы",
+    "item1": "Устав 'Запорожский авиационный колледж им. А.Г. Ивченко'",
+    "item2": "Кодекс академической добродеетельности",
+    "item3": "Положение о стипендиальной комиссии",
+    "item4": "Правила назначения и выплаты стипендий студентам Запорожского",
+    "item5": "Закон Украины о высшем образовании",
+    "item6": "Должностная инструкция преподавателя",
+    "item7": "Положение о правовой комиссии",
+    "item8": "Положение о руководителе группы ЗАК",
+    "item9": "Положение конкурса 'Калейдоскоп талантов'",
+    "item10": "Приказ о предотвращении насилия",
+    "item11": "Приказ о предотвращении табакокурения",
+    "item12": "Приказ на поселение в общежитие",
+    "item13": "Приказ о Дне студента",
+    "item14": "Приказ о назначении руководителей групп 2012-2013",
+    "item15": "Инструкция по безопасности життедияльности студентов во время зимних каникул",
+    "item16": "Инструкция вводного инструктажа по безопасности жизнедеятельности студентов",
+    "item17": "Шаблон списка студентов"
+    }
+}
+</i18n>

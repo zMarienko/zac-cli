@@ -91,6 +91,7 @@ export default {
     &.open {
       height: 100vh;
       transition: height 1.25s;
+      pointer-events: none;
     }
   }
 
