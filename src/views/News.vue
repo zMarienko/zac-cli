@@ -9,14 +9,20 @@
               :key="post.id"
               class="news__article"
             >
-              <img :src="post.image" class="news__img" />
+              <div class="news__img">
+                <router-link :to="'/news/' + post.id">
+                  <img :src="post.image"
+                /></router-link>
+              </div>
               <div class="news__content">
                 <router-link :to="'/news/' + post.id">
                   <h3 class="news__title main-title">{{ post.title }}</h3>
                 </router-link>
-                <div class="news__description">
-                  {{ post.description }}
-                </div>
+                <router-link :to="'/news/' + post.id">
+                  <div class="news__description">
+                    {{ post.description }}
+                  </div>
+                </router-link>
                 <span class="news__date">{{ post.date }}</span>
               </div>
             </article>
@@ -48,7 +54,7 @@
                   class="sidebar__item"
                   v-on:click="(month = 4), (year = 2020)"
                 >
-                  Квiтень
+                  Квітень
                 </button>
               </li>
               <li>
@@ -72,12 +78,12 @@
                   class="sidebar__item"
                   v-on:click="(month = 1), (year = 2020)"
                 >
-                  Сiчень
+                  Січень
                 </button>
               </li>
             </ul>
             <ul class="sidebar__block">
-              <li class="sidebar__year">2019</li>
+              <li class="sidebar__year">2015</li>
               <li>
                 <button
                   class="sidebar__item"
@@ -107,7 +113,382 @@
                   class="sidebar__item"
                   v-on:click="(month = 9), (year = 2019)"
                 >
+                  Вересень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 5), (year = 2019)"
+                >
+                  Травень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 4), (year = 2019)"
+                >
+                  Квітень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 3), (year = 2019)"
+                >
+                  Березень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 2), (year = 2019)"
+                >
+                  Лютий
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 1), (year = 2019)"
+                >
+                  Січень
+                </button>
+              </li>
+            </ul>
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2018</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 12), (year = 2018)"
+                >
+                  Грудень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 11), (year = 2018)"
+                >
                   Листопад
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 10), (year = 2018)"
+                >
+                  Жовтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 9), (year = 2018)"
+                >
+                  Вересень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 5), (year = 2018)"
+                >
+                  Травень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 4), (year = 2018)"
+                >
+                  Квітень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 3), (year = 2018)"
+                >
+                  Березень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 2), (year = 2018)"
+                >
+                  Лютий
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 1), (year = 2018)"
+                >
+                  Січень
+                </button>
+              </li>
+            </ul>
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2017</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 12), (year = 2017)"
+                >
+                  Грудень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 11), (year = 2017)"
+                >
+                  Листопад
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 10), (year = 2017)"
+                >
+                  Жовтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 9), (year = 2017)"
+                >
+                  Вересень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 5), (year = 2017)"
+                >
+                  Травень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 4), (year = 2017)"
+                >
+                  Квітень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 3), (year = 2017)"
+                >
+                  Березень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 2), (year = 2017)"
+                >
+                  Лютий
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 1), (year = 2017)"
+                >
+                  Січень
+                </button>
+              </li>
+            </ul>
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2016</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 12), (year = 2016)"
+                >
+                  Грудень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 11), (year = 2016)"
+                >
+                  Листопад
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 10), (year = 2016)"
+                >
+                  Жовтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 9), (year = 2016)"
+                >
+                  Вересень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 5), (year = 2016)"
+                >
+                  Травень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 4), (year = 2016)"
+                >
+                  Квітень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 3), (year = 2016)"
+                >
+                  Березень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 2), (year = 2016)"
+                >
+                  Лютий
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 1), (year = 2016)"
+                >
+                  Січень
+                </button>
+              </li>
+            </ul>
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2015</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 12), (year = 2015)"
+                >
+                  Грудень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 11), (year = 2015)"
+                >
+                  Листопад
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 10), (year = 2015)"
+                >
+                  Жовтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 9), (year = 2015)"
+                >
+                  Вересень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 5), (year = 2015)"
+                >
+                  Травень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 4), (year = 2015)"
+                >
+                  Квітень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 3), (year = 2015)"
+                >
+                  Березень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 2), (year = 2015)"
+                >
+                  Лютий
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 1), (year = 2015)"
+                >
+                  Січень
+                </button>
+              </li>
+            </ul>
+            <ul class="sidebar__block">
+              <li class="sidebar__year">2014</li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 12), (year = 2014)"
+                >
+                  Грудень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 11), (year = 2014)"
+                >
+                  Листопад
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 10), (year = 2014)"
+                >
+                  Жовтень
+                </button>
+              </li>
+              <li>
+                <button
+                  class="sidebar__item"
+                  v-on:click="(month = 9), (year = 2019)"
+                >
+                  Вересень
                 </button>
               </li>
             </ul>
@@ -142,13 +523,13 @@ export default {
 </script>
 
 <style lang="scss">
-.news__inner {
-  margin: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .news {
+  &__inner {
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__content-inner {
     width: 75%;
   }
@@ -175,8 +556,7 @@ export default {
     padding: 2px 5px 4px;
     color: #fff;
     text-shadow: none;
-    box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.4),
-      3px 4px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.22);
     background-color: rgba(25, 99, 211, 0.75);
     font-size: 16px;
   }
@@ -196,7 +576,11 @@ export default {
 
   &__img {
     width: 40%;
-    object-fit: cover;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -205,7 +589,6 @@ export default {
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
   width: 25%;
   height: 100%;
-  margin-bottom: 10px;
   padding-bottom: 10px;
 
   &__title {
@@ -251,8 +634,7 @@ export default {
   &__item {
     cursor: pointer;
     font-size: 20px;
-    box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.4),
-      3px 4px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.22);
     background-color: rgba(25, 99, 211, 0.75);
     text-align: center;
     color: #fff;
@@ -263,6 +645,22 @@ export default {
     &:hover {
       background-color: rgba(59, 132, 241, 0.75);
     }
+  }
+}
+
+@media (max-width: 770px) {
+  .news__inner {
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .news__content-inner {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin: 0px;
   }
 }
 </style>

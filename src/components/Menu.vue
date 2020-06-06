@@ -478,7 +478,7 @@
     }
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1100px) {
   .menu__submenu--ptsk {
     left: auto;
     left: -50%;
@@ -530,7 +530,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .menu__inner {
     display: none;
   }

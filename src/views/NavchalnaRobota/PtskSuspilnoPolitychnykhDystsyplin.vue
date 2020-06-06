@@ -31,7 +31,7 @@
 
         <div class="default__item default__item--large">
           <img
-            src="/img/nopicture.jpg"
+            src="/img/history.jpg"
             class="default__item-img default__item-img--large"
           />
           <div class="default__item-name">
@@ -61,7 +61,7 @@
 
         <div class="default__item default__item--large">
           <img
-            src="/img/nopicture.jpg"
+            src="/img/pavlova.jpg"
             class="default__item-img default__item-img--large"
           />
           <div class="default__item-name">

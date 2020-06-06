@@ -6,12 +6,12 @@
           {{ $t('title') }}
         </div>
         <div class="default__quote">
-          {{ $t('link') }}
+          {{ $t('link-text') }}
           <a
             target="_blank"
             href="https://docs.google.com/document/d/15sTjEGGQPuYWYlCcPlbZNSkSwoC1Aubdu5dAVtF1hzs/edit"
-            >https://docs.google.com/document/d/15sTjEGGQPuYWYlCcPlbZNSkSwoC1Aubdu5dAVtF1hzs/edit</a
-          >
+            >{{ $t('link') }}
+          </a>
         </div>
 
         <iframe
@@ -34,11 +34,13 @@ iframe {
 {
   "ua": {
     "title": "Змiни в розкладi",
-    "link": "Посилання на змiни в розкладi:"
+    "link-text": "Посилання на змiни в розкладi:",
+    "link": "перейти"
   },
   "ru": {
     "title": "Изменения в расписании",
-    "link": "Ссылка на изменения в расписании:"
+    "link-text": "Ссылка на изменения в расписании:",
+    "link": "перейти"
     }
 }
 </i18n>

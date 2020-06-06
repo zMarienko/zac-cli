@@ -102,6 +102,7 @@ export default {
     color: #1c537a;
     font-size: 34px;
     width: 420px;
+    line-height: 1;
     white-space: nowrap;
   }
 
@@ -140,7 +141,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .header {
     position: fixed;
     z-index: 2;

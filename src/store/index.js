@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import posts from './posts.json'
+import posts from '../../public/posts.json'
 
 Vue.use(Vuex)
 

@@ -131,6 +131,8 @@
          width: auto;
          margin: 10px 15px;
          padding: 0px;
+
+         align-items: center;
       }
 
       &--psiholog {
@@ -144,6 +146,7 @@
 
       &-name {
          padding: 20px 10px;
+         width: 80%;
       }
 
       &-title {
@@ -181,7 +184,10 @@
          object-fit: cover;
 
          &--large {
-            width: 20%;
+            flex: 0 0 200px;
+            width: 200px;
+            height: 250px;
+            margin: 15px 0px 15px 15px;
          }
       }
    }
@@ -239,11 +245,32 @@
    }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 770px) {
+   .default__row {
+      justify-content: start;
+      flex-direction: column;
+      width: 100%;
+   }
+
    .default__inner {
+
       &--row {
          flex-direction: column;
       }
+   }
+
+   .default__content--sidebar {
+      width: 100%;
+   }
+
+   .default__inner--sidebar {
+      justify-content: start;
+      flex-direction: column;
+   }
+
+   .default__sidebar {
+      width: 100%;
+      margin-top: 10px;
    }
 
    .default__title {
@@ -255,5 +282,26 @@
 
    .default__btn {
       margin: 0 auto;
+   }
+
+   .default__item-img {
+      align-self: center;
+      margin: 10px 0px 0px 0px;
+
+      &--large {
+         display: none;
+      }
+   }
+
+   .default__item {
+      flex-direction: column;
+      width: 100%;
+      margin: 10px 0px;
+
+      &-name {
+         text-align: center;
+         width: 100%;
+         padding: 10px 0px;
+      }
    }
 }
