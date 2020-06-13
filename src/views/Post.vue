@@ -11,7 +11,6 @@
               {{ post.text }}
             </div>
           </div>
-
           <img class="post__img" :src="post.image" />
         </div>
       </section>
@@ -20,13 +19,33 @@
 </template>
 
 <script lang="babel">
+import axios from 'axios'
+
 export default {
   name: 'post',
-  computed: {
-    post() {
-      return this.$store.getters.postsById(+this.$route.params.id);
-    },
+  props: ['id'],
+  data () {
+    return {
+      post: {}
+    };
   },
+
+  methods: {
+    getPost(id) {
+      axios('http://localhost:3000/posts/' + id)
+      .then(response => {
+      this.post = response.data
+       })
+      .catch( error => {
+     console.log(error)
+    })
+  }
+  },
+
+  created() {
+     this.getPost(this.$route.params.id);
+  },
+
 };
 </script>
 

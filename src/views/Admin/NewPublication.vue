@@ -5,53 +5,59 @@
         <div class="new-publication__title main-title">Нова публiкацiя</div>
         <form class="form" @submit.prevent="submitPost">
           <div class="form__row">
-            <div class="form__column-left">
-              <label class="form__label">Головна картинка</label>
-              <label class="form__label">Назва публiкацї</label>
-              <label class="form__label">Короткий опис</label>
-              <label class="form__label">Текст</label>
-            </div>
-            <div class="form__column-right">
-              <input
-                id="file"
-                ref="file"
-                type="file"
-                class="form__file"
-                accept="image/*"
-                @change="onFileChange"
-                required
-              />
-              <input
-                class="form__title"
-                v-model="title"
-                placeholder="Введiть назву.."
-                maxlength="200"
-                required
-              />
-              <input
-                class="form__description"
-                v-model="description"
-                placeholder="Введiть короткий опис публiкацї.."
-                required
-              />
-              <textarea
-                class="form__text"
-                v-model="text"
-                placeholder="Напишiть щось.."
-                rows="12"
-                required
-              ></textarea>
-
-              <button class="form__btn" type="submit">
-                Опублікувати
-              </button>
-              <input
-                type="date"
-                :value="date.toISOString().split('T')[0]"
-                class="form__date"
-                id="form__date"
-              />
-            </div>
+            <label class="form__label form__left">Головна картинка</label>
+            <input
+              id="file"
+              ref="file"
+              type="file"
+              class="form__file form__right"
+              accept="image/*"
+              @change="onFileChange"
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label form__left">Назва публiкацї</label>
+            <input
+              class="form__title form__right"
+              v-model="title"
+              placeholder="Введiть назву.."
+              maxlength="200"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label form__left">Короткий опис</label>
+            <input
+              class="form__description form__right"
+              v-model="description"
+              placeholder="Введiть короткий опис публiкацї.."
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label form__left">Текст</label>
+            <textarea
+              class="form__text form__right"
+              v-model="text"
+              placeholder="Напишiть щось.."
+              rows="12"
+              required
+            ></textarea>
+          </div>
+          <div class="form__row">
+            <label class="form__label form__left"> </label>
+            <button class="form__btn blue-button form__right" type="submit">
+              Опублікувати
+            </button>
+          </div>
+          <div class="form__row">
+            <label class="form__label form__left"> </label>
+            <input
+              type="date"
+              :value="date.toISOString().split('T')[0]"
+              class="form__right form__date"
+              id="form__date"
+            />
           </div>
         </form>
       </div>
@@ -60,6 +66,8 @@
 </template>
 
 <script lang="babel">
+import axios from 'axios'
+
 export default {
   name: 'new-post',
   data: () => ({
@@ -103,7 +111,7 @@ export default {
         image: this.image,
       };
       console.log(post);
-      this.$store.dispatch('createPost', post);
+      axios.post('http://localhost:3000/new-post', post)
       this.$router.push('/news');
     },
   },
@@ -128,9 +136,17 @@ export default {
   &__row {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__label {
     padding: 19px 10px;
+    @media (max-width: 650px) {
+      padding: 5px 5px;
+    }
   }
   &__title,
   &__description,
@@ -143,30 +159,34 @@ export default {
   }
 
   &__date {
-    width: 120px;
+    text-align: right;
   }
 
-  &__column-left {
-    display: flex;
-    flex-direction: column;
+  &__left {
+    flex: 15%;
     width: 15%;
-    align-items: flex-end;
+    text-align: right;
+    @media (max-width: 650px) {
+      flex: 100%;
+      width: 100%;
+      text-align: center;
+    }
   }
-  &__column-right {
-    display: flex;
-    flex-direction: column;
+
+  &__right {
+    flex: 85%;
     width: 85%;
-    margin-right: 30px;
+    @media (max-width: 650px) {
+      flex: 100%;
+      width: 100%;
+    }
   }
+
   &__btn {
-    background-color: #4caf50;
     color: white;
     padding: 12px 20px;
     border-radius: 4px;
     text-align: center;
-    &:hover {
-      background-color: #45a049;
-    }
   }
 }
 </style>

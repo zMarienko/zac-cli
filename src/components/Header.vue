@@ -7,13 +7,18 @@
             <img class="header__logo" src="/img/ukraine.svg" alt="zac.zp.ua" />
           </router-link>
           <div class="header__name">
-            <router-link to="/admin/news/new">
+            <router-link to="/">
               <h1 v-html="$t('header__title')" class="header__title"></h1>
             </router-link>
             <h2 class="header__subtitle">
               {{ $t('header__subtitle') }}
             </h2>
             <div class="header__land land">
+              <span v-if="isLoggedIn"
+                ><a class="header__logout" @click="logout">
+                  Вийти
+                </a></span
+              >
               <button
                 v-bind:class="{ land__selected: localeUA }"
                 class="land__ua"
@@ -69,12 +74,57 @@ export default {
       localeUA: true,
     };
   },
+  computed : {
+      isLoggedIn : function(){ return this.$store.getters.isLoggedIn}
+    },
+  methods: {
+      logout: function () {
+        this.$store.dispatch('logout')
+        .then(() => {
+          this.$router.push('/login')
+        })
+      }
+    },
+  created: function () {
+    this.$http.interceptors.response.use(undefined, function (err) {
+      return new Promise(function (resolve, reject) {
+        if (err.status === 401 && err.config && !err.config.__isRetryRequest) {
+          this.$store.dispatch("logout")
+        }
+        throw err;
+      });
+    });
+  }
 };
 </script>
 
 <style lang="scss">
 .header {
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+
+  &__logout {
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px solid #e7ecef;
+    padding: 1px 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    margin-right: 10px;
+    background-image: linear-gradient(
+      to right,
+      #336ec7 0%,
+      #ffffff 70%,
+      #336ec7 100%
+    );
+    transition: 0.7s;
+    background-size: 500% auto;
+
+    &:hover {
+      border: 1px solid #fff;
+      background-position: right center;
+    }
+  }
 
   &__top {
     background-color: #f1f2ff;

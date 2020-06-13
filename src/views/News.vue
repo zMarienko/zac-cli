@@ -5,7 +5,7 @@
         <div class="news__content-inner">
           <div v-if="posts.length" class="news__list">
             <article
-              v-for="post of displayPosts2"
+              v-for="post of postsFilter"
               :key="post.id"
               class="news__article"
             >
@@ -83,7 +83,7 @@
               </li>
             </ul>
             <ul class="sidebar__block">
-              <li class="sidebar__year">2015</li>
+              <li class="sidebar__year">2019</li>
               <li>
                 <button
                   class="sidebar__item"
@@ -500,17 +500,33 @@
 </template>
 
 <script lang="babel">
+import axios from 'axios'
+
 export default {
   name: 'news',
-  data: () => ({
-    month: null,
-    year: null,
-  }),
+  data () {
+    return {
+      month: null,
+      year: null,
+      posts: []
+    };
+  },
+  created() {
+    this.getPosts();
+  },
+  methods: {
+    getPosts() {
+      axios('http://localhost:3000/posts')
+      .then(response => {
+      this.posts = response.data;
+       })
+      .catch( error => {
+     console.log(error)
+    })
+  }
+  },
   computed: {
-    posts() {
-      return this.$store.getters.posts;
-    },
-    displayPosts2() {
+    postsFilter() {
       return this.posts.filter((t) => {
         if (!this.month && !this.year) {
           return true;

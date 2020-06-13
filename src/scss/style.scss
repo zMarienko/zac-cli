@@ -16,13 +16,6 @@ body {
    background-position: 0px 230px;
    background-size: 400px;
 
-   .error-404:before {
-      content: '';
-      position: absolute;
-      width: 500px;
-      height: 40%;
-      background-color: #ffff;
-   }
 }
 
 .container {
@@ -73,6 +66,7 @@ body {
 }
 
 .land {
+
    &__selected {
       border: 1px solid #fff;
       background: #fff;
@@ -82,7 +76,7 @@ body {
    &__ru {
       font-size: 12px;
       border: 1px solid #e7ecef;
-      min-height: 20px;
+      padding: 1px 0px;
       min-width: 40px;
       border-radius: 10px;
       transition: all 0.2s ease-in-out;

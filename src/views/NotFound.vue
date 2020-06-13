@@ -21,6 +21,14 @@
 
 <style lang="scss" scoped>
 .error-404 {
+  &:before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 50%;
+    background-color: #ffff;
+  }
+
   &__inner {
     margin-top: 6em;
   }
@@ -72,6 +80,15 @@
       background-color: #f2f5f8;
       z-index: -1;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .error-404__img {
+    display: none;
+  }
+  &::before {
+    display: none;
   }
 }
 </style>
